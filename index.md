@@ -15,4 +15,4 @@ Learning claims to provide a secure way of collaboratively training deep learnin
 method have not been fully investigated, however. In this work, we first present vulnerabilities of Federated Learning 
 involving raw data retrieval and input data poisoning. Secondly, we investigate how similar attacks can be 
 adapted to exploit vulnerabilities in Split Learning. Lastly, we present methods to
-prevent or the attacks in order to make the Split Learning method more resilient to adversaries.
+prevent or mitigate the attacks in order to increase the resilience of the Split Learning method against adversaries.
