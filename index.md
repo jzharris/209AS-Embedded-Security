@@ -20,13 +20,12 @@ prevent or mitigate the attacks in order to increase the resilience of the Split
 
 ### Citations
 
+<ol>
 ##### Vulnerabilities of Federated Learning
 
-<ol>
     <li id="1">
     Zhang, Jiale, et al. "Poisoning Attack in Federated Learning using Generative Adversarial Nets." 2019 18th IEEE International Conference On Trust, Security And Privacy In Computing And Communications/13th IEEE International Conference On Big Data Science And Engineering (TrustCom/BigDataSE). IEEE, 2019.
     </li>
-</ol>
 
 2. Kairouz, Peter, et al. "Advances and open problems in federated learning." arXiv preprint arXiv:1912.04977 (2019).
 
@@ -58,3 +57,5 @@ prevent or mitigate the attacks in order to increase the resilience of the Split
 1. Chen, Huili, et al. "Deepinspect: A black-box trojan detection and mitigation framework for deep neural networks." Proceedings of the 28th International Joint Conference on Artificial Intelligence. AAAI Press. 2019.
 2. Fung, Clement, Chris JM Yoon, and Ivan Beschastnikh. "Mitigating sybils in federated learning poisoning." arXiv preprint arXiv:1808.04866 (2018).
 
+
+</ol>
