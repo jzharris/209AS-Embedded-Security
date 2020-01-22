@@ -1,4 +1,4 @@
-# Anomaly detection for Split Learning
+# Taking Measures to Combat the Vulnerabilities of Split Learning
 
 ### Authors
 * Zach Harris: UCLA, M.S. in ECE, _jzharris@g.ucla.edu_
