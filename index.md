@@ -19,14 +19,14 @@ prevent or mitigate the attacks in order to increase the resilience of the Split
 
 ### 2 Citations
 
-#### 2.1 Vulnerabilities of Federated Learning
+##### Vulnerabilities of Federated Learning
 
 1. Zhang, Jiale, et al. "Poisoning Attack in Federated Learning using Generative Adversarial Nets." 2019 18th IEEE International Conference On Trust, Security And Privacy In Computing And Communications/13th IEEE International Conference On Big Data Science And Engineering (TrustCom/BigDataSE). IEEE, 2019.
 2. Kairouz, Peter, et al. "Advances and open problems in federated learning." arXiv preprint arXiv:1912.04977 (2019).
 3. Bhagoji, Arjun Nitin, et al. "Analyzing federated learning through an adversarial lens." arXiv preprint arXiv:1811.12470 (2018).
 4. Bagdasaryan, Eugene, et al. "How to backdoor federated learning." arXiv preprint arXiv:1807.00459 (2018).
 
-#### 2.2 Split Learning Methods
+##### Split Learning Methods
 
 1. Vepakomma, Praneeth, et al. "Split learning for health: Distributed deep learning without sharing raw patient data." arXiv preprint arXiv:1812.00564 (2018).
 2. Gupta, Otkrist, and Ramesh Raskar. "Distributed learning of deep neural network over multiple agents." Journal of Network and Computer Applications 116 (2018): 1-8.
@@ -37,6 +37,6 @@ prevent or mitigate the attacks in order to increase the resilience of the Split
 7. Sharma, Vivek, et al. "ExpertMatcher: Automating ML Model Selection for Clients using Hidden Representations." arXiv preprint arXiv:1910.03731 (2019).
 8. Poirot, Maarten G., et al. "Split Learning for collaborative deep learning in healthcare." arXiv preprint arXiv:1912.12115 (2019).
 
-#### 2.3 Attack Prevention
+##### Attack Prevention
 
 1. TODO
