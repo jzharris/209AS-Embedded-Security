@@ -1,10 +1,10 @@
-# Anomaly detection for Split Learning
+# Combatting the Vulnerabilities of Split Learning
 
 ### Authors
 * Zach Harris: UCLA, M.S. in ECE, _jzharris@g.ucla.edu_
 * Hamza Khan: UCLA, M.S. in ECE, _hamzakhan@g.ucla.edu_
 
-### 1 Abstract
+### Abstract
 As big data analytics becomes rooted in critical fields such as health, finance, economics, and politics,
 the privacy of the data used to train the models must be secured. For example, health information from patients is confidential
 and must abide by patient confidentiality agreements. This information can still be used to collaboratively train a 
@@ -15,7 +15,7 @@ Learning claims to provide a secure way of collaboratively training deep learnin
 method have not been fully investigated, however. In this work, we first present vulnerabilities of Federated Learning 
 involving raw data retrieval and input data poisoning. Secondly, we investigate how similar attacks can be 
 adapted to exploit vulnerabilities in Split Learning. Lastly, we present methods to
-prevent or the attacks in order to make the Split Learning method more resilient to adversaries.
+prevent or mitigate the attacks in order to increase the resilience of the Split Learning method against adversaries.
 
 ### 2 Citations
 
