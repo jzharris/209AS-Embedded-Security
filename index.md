@@ -15,8 +15,8 @@ Learning claims to provide a secure way of collaboratively training deep learnin
 method have not been fully investigated, however. In this work, we first present vulnerabilities of Federated Learning 
 involving raw data retrieval and input data poisoning [[1]](#1)[[2]](#2). 
 We focus our investigation to label flipping attacks [[3]](#3)[[4]](#4)[[5]](#5) and backdoor attacks [[6]](#6)[[7]](#7). 
-Secondly, we introduce Split Learning [[8]](#8)[[15]](#15) and investigate how these attacks can exploit vulnerabilities. 
-Lastly, we present methods to prevent or mitigate the attacks on Split Learning inspired by previous mitigation methods [[16]](#16)[[17]](#17).
+Secondly, we introduce Split Learning [[8]](#8)[[15]](#15) and investigate its susceptibility to label flipping and backdoor attacks. 
+Lastly, we present methods to prevent or mitigate attacks on Split Learning inspired by previous mitigation methods [[16]](#16)[[17]](#17).
 
 ### Citations
 
