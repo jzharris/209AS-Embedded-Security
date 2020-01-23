@@ -13,34 +13,34 @@ Federated Learning, however, has been shown to expose backdoors which make the t
 to unwanted and undetected data retrieval or model poisoning attacks during training. A recent method called Split 
 Learning claims to provide a secure way of collaboratively training deep learning models. The vulnerabilities of this
 method have not been fully investigated, however. In this work, we first present vulnerabilities of Federated Learning 
-involving raw data retrieval and input data poisoning. We focus our investigation to label flipping and backdoor attacks 
-using methods presented from [[1]](#v.1). Secondly, we 
-investigate how such attacks can be used to exploit vulnerabilities in Split Learning. Lastly, we present methods to
-prevent or mitigate the attacks in order to increase the resilience of the Split Learning method against adversaries.
+involving raw data retrieval and input data poisoning [[1]](#1)[[2]](#2). 
+We focus our investigation to label flipping attacks [[3]](#3)[[4]](#4)[[5]](#5) and backdoor attacks [[6]](#6)[[7]](#7). 
+Secondly, we introduce Split Learning [[8]](#8)[[15]](#15) and investigate how these attacks can exploit vulnerabilities. 
+Lastly, we present methods to prevent or mitigate the attacks on Split Learning inspired by previous mitigation methods [[16]](#16)[[17]](#17).
 
 ### Citations
 
 ##### Vulnerabilities of Federated Learning
 
 <ol>
-    <li id="FL.1">
-    Zhang, Jiale, et al. "Poisoning Attack in Federated Learning using Generative Adversarial Nets." 2019 18th IEEE International Conference On Trust, Security And Privacy In Computing And Communications/13th IEEE International Conference On Big Data Science And Engineering (TrustCom/BigDataSE). IEEE, 2019.
-    </li>
-    <li id="FL.2">
+    <li id="1">
     Kairouz, Peter, et al. "Advances and open problems in federated learning." arXiv preprint arXiv:1912.04977 (2019).
     </li>
-    <li id="FL.3">
+    <li id="2">
     Bhagoji, Arjun Nitin, et al. "Analyzing federated learning through an adversarial lens." arXiv preprint arXiv:1811.12470 (2018).
     </li>
 </ol>
 
 ##### Label Flipping Attacks
 
-<ol start="4">
-    <li id="FA.1">
+<ol start="3">
+    <li id="3">
+    Zhang, Jiale, et al. "Poisoning Attack in Federated Learning using Generative Adversarial Nets." 2019 18th IEEE International Conference On Trust, Security And Privacy In Computing And Communications/13th IEEE International Conference On Big Data Science And Engineering (TrustCom/BigDataSE). IEEE, 2019.
+    </li>
+    <li id="4">
     Biggio, Battista, Blaine Nelson, and Pavel Laskov. "Poisoning attacks against support vector machines." arXiv preprint arXiv:1206.6389 (2012).
     </li>
-    <li id="FA.2">
+    <li id="5">
     Huang, Ling, et al. "Adversarial machine learning." Proceedings of the 4th ACM workshop on Security and artificial intelligence. 2011.
     </li>
 </ol>
@@ -48,10 +48,10 @@ prevent or mitigate the attacks in order to increase the resilience of the Split
 ##### Backdoor Attacks
 
 <ol start="6">
-    <li id="BA.1">
+    <li id="6">
     Chen, Xinyun, et al. "Targeted backdoor attacks on deep learning systems using data poisoning." arXiv preprint arXiv:1712.05526 (2017).
     </li>
-    <li id="BA.2">
+    <li id="7">
     Bagdasaryan, Eugene, et al. "How to backdoor federated learning." arXiv preprint arXiv:1807.00459 (2018).
     </li>
 </ol>
@@ -59,28 +59,28 @@ prevent or mitigate the attacks in order to increase the resilience of the Split
 ##### Split Learning Method
 
 <ol start="8">
-    <li id="SL.1">
+    <li id="8">
     Vepakomma, Praneeth, et al. "Split learning for health: Distributed deep learning without sharing raw patient data." arXiv preprint arXiv:1812.00564 (2018).
     </li>
-    <li id="SL.2">
+    <li id="9">
     Gupta, Otkrist, and Ramesh Raskar. "Distributed learning of deep neural network over multiple agents." Journal of Network and Computer Applications 116 (2018): 1-8.
     </li>
-    <li id="SL.3">
+    <li id="10">
     Vepakomma, Praneeth, et al. "No Peek: A Survey of private distributed deep learning." arXiv preprint arXiv:1812.03288 (2018).
     </li>
-    <li id="SL.4">
+    <li id="11">
     Vepakomma, Praneeth, et al. "Reducing leakage in distributed deep learning for sensitive health data." arXiv preprint arXiv:1812.00564 (2019).
     </li>
-    <li id="SL.5">
+    <li id="12">
     Singh, Abhishek, et al. "Detailed comparison of communication efficiency of split learning and federated learning." arXiv preprint arXiv:1909.09145 (2019).
     </li>
-    <li id="SL.6">
+    <li id="13">
     Sharma, Vivek, et al. "ExpertMatcher: Automating ML Model Selection for Users in Resource Constrained Countries." arXiv preprint arXiv:1910.02312 (2019).
     </li>
-    <li id="SL.7">
+    <li id="14">
     Sharma, Vivek, et al. "ExpertMatcher: Automating ML Model Selection for Clients using Hidden Representations." arXiv preprint arXiv:1910.03731 (2019).
     </li>
-    <li id="SL.8">
+    <li id="15">
     Poirot, Maarten G., et al. "Split Learning for collaborative deep learning in healthcare." arXiv preprint arXiv:1912.12115 (2019).
     </li>
 </ol>
@@ -88,10 +88,10 @@ prevent or mitigate the attacks in order to increase the resilience of the Split
 ##### Attacker Detection and Mitigation
 
 <ol start="16">
-    <li id="DM.9">
+    <li id="16">
     Chen, Huili, et al. "Deepinspect: A black-box trojan detection and mitigation framework for deep neural networks." Proceedings of the 28th International Joint Conference on Artificial Intelligence. AAAI Press. 2019.
     </li>
-    <li id="DM.10">
+    <li id="17">
     Fung, Clement, Chris JM Yoon, and Ivan Beschastnikh. "Mitigating sybils in federated learning poisoning." arXiv preprint arXiv:1808.04866 (2018).
     </li>
 </ol>
