@@ -9,8 +9,8 @@ As big data analytics becomes rooted in critical fields such as health, finance,
 the privacy and integrity of the training data must be upheld. For example, health information from patients is confidential
 and must abide by patient confidentiality agreements. This information can still be used to collaboratively train a 
 deep learning model while maintaining privacy through methods such as Federated Learning. 
-Federated Learning, however, has been shown to expose backdoors which make the training data liable
-to unwanted and undetected data retrieval or model poisoning attacks during training. A recent method called Split 
+Federated Learning, however, has been shown to expose backdoors which make the data liable
+to undetectable data retrieval and model poisoning attacks during training. A recent method called Split 
 Learning claims to provide a secure way of collaboratively training deep learning models. The vulnerabilities of this
 method have not been fully investigated, however. In this work, we first present vulnerabilities of Federated Learning 
 involving raw data retrieval and input data poisoning [[1]](#1)[[2]](#2), focussing on 
