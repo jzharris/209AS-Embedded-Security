@@ -305,7 +305,7 @@ if __name__ == '__main__':
     parser.add_argument('--sample', help='If given, will generate that many samples from existing model instead of training', default=-1)
     parser.add_argument('--sample_thresholds', help='The values between which a generated image must score from the discriminator', default="(0.0, 0.1)")
     parser.add_argument('--batch_size', help='Number of images to train on at once', default=48)    #24: reg, 48:mnist and cifar
-    parser.add_argument('--builtin_dataset', default="mnist")
+    parser.add_argument('--builtin_dataset', default="cifar10")
     parser.add_argument('--image_size', help='Size of images as tuple (height,width). Height and width must both be divisible by (2^5)', default="(128, 96)")
     parser.add_argument('--image_channels', default=1)
     parser.add_argument('--epochs', help='Number of epochs to train for', default=500000)
