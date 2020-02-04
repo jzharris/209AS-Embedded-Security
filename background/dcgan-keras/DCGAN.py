@@ -15,18 +15,27 @@ import imageio
 
 
 class DCGAN:
-    def __init__(self, discriminator_path, generator_path, output_directory, img_size, img_channels, use_cifar=False):
-        self.use_cifar = use_cifar
-        if self.use_cifar:
+    def __init__(self, discriminator_path, generator_path, output_directory, img_size, img_channels, builtin_dataset):
+        self.use_cifar = builtin_dataset == "cifar10"
+        self.use_mnist = builtin_dataset == "mnist"
+        if self.use_cifar or self.use_mnist:
             self.img_size = (32, 32)
+            self.channels = 3 if self.use_cifar else 1
         else:
+            self.channels = img_channels
             self.img_size = img_size
+
         self.upsample_layers = 5
         self.starting_filters = 64
         self.kernel_size = 3
-        self.channels = img_channels
         self.discriminator_path = discriminator_path
         self.generator_path = generator_path
+        if builtin_dataset:
+            orig_dir = output_directory.split("/")
+            output_directory = ""
+            for folder in orig_dir[:-1]:
+                output_directory += folder + "/"
+            output_directory += builtin_dataset
         self.output_directory = output_directory
 
     def build_generator(self):
@@ -158,16 +167,25 @@ class DCGAN:
     def load_imgs(self, image_path):
         if self.use_cifar:
             (x_train, train_labels), (_, _) = keras.datasets.cifar10.load_data()
+        elif self.use_mnist:
+            x_train = []
+            (imgs, train_labels), (_, _) = keras.datasets.mnist.load_data()
+            print(imgs.shape)
+            for img in imgs:
+                # scale image to be the same WxH as we need:
+                img = cv2.resize(img, dsize=(self.img_size[1], self.img_size[0]), interpolation=cv2.INTER_CUBIC)
+                # also add channels:
+                if len(img.shape) <= 2:
+                    img = img[:, :, np.newaxis]
+                x_train.append(img)
         else:
             x_train = []
             for i in glob.glob(image_path):
                 img = Image.open(i)
                 img = np.asarray(img)
-
                 if img.shape != self.img_size:
                     # scale image to be the same WxH as we need:
                     img = cv2.resize(img, dsize=(self.img_size[1], self.img_size[0]), interpolation=cv2.INTER_CUBIC)
-
                     # also add channels:
                     if len(img.shape) <= 2:
                         img = img[:, :, np.newaxis]
@@ -286,18 +304,18 @@ if __name__ == '__main__':
     parser.add_argument('--data', help='Path to directory of images of correct dimensions, using *.[filetype] (e.g. *.png) to reference images', default="./data/att-database-of-faces/*/*.pgm")
     parser.add_argument('--sample', help='If given, will generate that many samples from existing model instead of training', default=-1)
     parser.add_argument('--sample_thresholds', help='The values between which a generated image must score from the discriminator', default="(0.0, 0.1)")
-    parser.add_argument('--batch_size', help='Number of images to train on at once', default=24)
-    parser.add_argument('--use_cifar', default=False)
+    parser.add_argument('--batch_size', help='Number of images to train on at once', default=48)    #24: reg, 48:mnist and cifar
+    parser.add_argument('--builtin_dataset', default="mnist")
     parser.add_argument('--image_size', help='Size of images as tuple (height,width). Height and width must both be divisible by (2^5)', default="(128, 96)")
+    parser.add_argument('--image_channels', default=1)
     parser.add_argument('--epochs', help='Number of epochs to train for', default=500000)
     parser.add_argument('--save_interval', help='How many epochs to go between saves/outputs', default=100)
-    parser.add_argument('--output_directory', help="Directoy to save weights and images to.", default="./data/output/att")
-    parser.add_argument('--image_channels', default=1)
+    parser.add_argument('--output_directory', help="Directoy to save weights and images to.", default="./data/output/test")
 
     args = parser.parse_args()
 
     dcgan = DCGAN(args.load_discriminator, args.load_generator, args.output_directory, literal_eval(args.image_size),
-                  args.image_channels, use_cifar=args.use_cifar)
+                  args.image_channels, args.builtin_dataset)
     if args.sample == -1:
         dcgan.train(epochs=int(args.epochs), image_path=args.data, batch_size=int(args.batch_size), save_interval=int(args.save_interval))
     else:
