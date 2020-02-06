@@ -1,5 +1,8 @@
 .ipynb_checkpoints
 
-# DCGAN - Keras
+# Background - DCGAN-Keras
 output/
 att-database-of-faces/
+
+# Main - Split Learning
+*.h5
