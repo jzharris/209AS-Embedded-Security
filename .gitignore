@@ -6,3 +6,4 @@ att-database-of-faces/
 
 # Main - Split Learning
 *.h5
+*.pkl
