@@ -15,7 +15,7 @@ Website: https://jzharris.github.io/209AS-Embedded-Security/
         - test against ~100 CNN configs and 2-3 datasets
         - use naive estimator during testing as a baseline
         
-3. Correlation between the loss of the blackbox and the ability for us to estimate it
+3. ✅ Correlation between the loss of the blackbox and the ability for us to estimate it
     - hypothesis: poorly trained blackbox models will be harder to estimate because their outputs will "blanket" a 
     large area of possibilities.
         - train estimator using the same network...
