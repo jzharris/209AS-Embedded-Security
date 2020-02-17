@@ -10,7 +10,7 @@ Website: https://jzharris.github.io/209AS-Embedded-Security/
 1. Perform label poisoning attack
     - vary the percentage of compromised clients/class
     
-2. Correlation between estimator accuracy and the complexity of the blackbox
+2. ✅ Correlation between estimator accuracy and the complexity of the blackbox
     - hypothesis: InceptionV3 or FractalNet will perform well against most blackboxes
         - test against ~100 CNN configs and 2-3 datasets
         - use naive estimator during testing as a baseline
