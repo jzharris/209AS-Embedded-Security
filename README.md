@@ -7,22 +7,16 @@ Website: https://jzharris.github.io/209AS-Embedded-Security/
 
 #### Experiments
 
-1. Perform label poisoning attack
-    - vary the percentage of compromised clients/class
+1. ☑ Show that we can approximate the Black-box model
+    - Black-box complexity
+    - Black-box accuracy
     
-2. ☑ Correlation between estimator accuracy and the complexity of the blackbox
-    - hypothesis: InceptionV3 or FractalNet will perform well against most blackboxes
-        - test against ~100 CNN configs and 2-3 datasets
-        - use naive estimator during testing as a baseline
-        
-3. ☑ Correlation between the loss of the blackbox and the ability for us to estimate it
-    - hypothesis: poorly trained blackbox models will be harder to estimate because their outputs will "blanket" a 
-    large area of possibilities.
-        - train estimator using the same network...
+2. Optimize Black-box model approximation
+    - Approximate black-box by using gradient patterns during training
     
-4. Perform GAN attack
-    
-5. Correlation between blackbox size and a change in the gradients during training
-    - hypothesis: Increase in complexity/depth of model will result in more gradient decay
+3. Adapt GAN label poisoning attacks from Federated Learning to target Split Learning
+    - Use gradient techniques to improve GAN attack performance
 
-6. Use "Reverse Gradient" techniques to improve the training of the estimator
+4. Perform backdoor label poisoning attacks
+
+5. Evaluate Split Learning attack detection and prevention methods
