@@ -13,10 +13,35 @@ Federated Learning, however, has been shown to expose backdoors which make the d
 to undetectable data retrieval and model poisoning attacks during training. A recent method called Split 
 Learning claims to provide a secure way of collaboratively training deep learning models. The vulnerabilities of this
 method have not been fully investigated, however. In this work, we first present vulnerabilities of Federated Learning 
-involving raw data retrieval and input data poisoning [[1]](#1)[[2]](#2), focussing on 
-label flipping attacks [[3]](#3)[[4]](#4)[[5]](#5) and backdoor attacks [[6]](#6)[[7]](#7). 
-Secondly, we introduce Split Learning [[8]](#8)[[15]](#15) and investigate its susceptibility to label flipping and backdoor attacks. 
-Lastly, we present methods to prevent or mitigate attacks on Split Learning inspired from previous mitigation methods [[16]](#16)[[17]](#17).
+involving raw data retrieval and input data poisoning [[1-2]](#1), focussing on 
+label flipping attacks [[3-5]](#3) and backdoor attacks [[6-7]](#6). 
+Secondly, we introduce Split Learning [[8-15]](#8) and investigate its susceptibility to label flipping and backdoor attacks. 
+Lastly, we present methods to prevent or mitigate attacks on Split Learning inspired from previous mitigation methods [[16-17]](#16).
+
+### Project Goals and Specific Aims
+
+1. Simulate Split Learning
+2. Present the vulernabilities of Split Learning
+    - Label poisoning attacks [[3-5]](#3)
+    - Backdoor attacks [[6-7]](#6)
+3. Harden Split Learning
+    - Black-box trojan detection [[16]](#16)
+    - Mitigating federated learning poinsoning [[17]](#17)
+
+### Experiments
+
+1. Show that we can approximate the Black-box model
+    - Black-box complexity
+    - Black-box accuracy
+    
+2. Optimize the Black-box model approximation
+    - Approximate Black-box by recognizing gradient patterns during training
+
+3. Adapt GAN label poisoning attack from [[3]](#3) to target Split Learning
+    - Use gradient techniques to improve GAN attack performance
+
+4. Perform backdoor label poisoning attacks [[6-7]](#6)
+5. Evaluate Split Learning attack detection and prevention methods [[16-17]](#16)
 
 ### Citations
 
