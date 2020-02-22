@@ -1,5 +1,8 @@
 TODOs:
 
+[ ] Have GAN estimate multiple classes at once. This may help push the NN in the right direction,
+given some shared features between different classes. (This requires a conditional GAN)
+
 [ ] After training split learning, GAN needs the updated Discriminator (in EASY_MODE) or to refine the Discriminator o.w.
 Right now, if Split Learning trains first, the GAN does not get an updated model. As simple as slg.gan.discriminator = _ ?
 
