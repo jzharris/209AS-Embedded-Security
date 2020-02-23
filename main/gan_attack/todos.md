@@ -1,8 +1,7 @@
 TODOs:
 
-2. Split GAN class into Generator, Discriminator, and GAN
-3. Save accuracies and losses to arrays and plot them
-4. Run GAN from scratch using a maximally trained Blackbox
+1. Make adaptive G/D training triggers - based on whether the training is stalling for G or D
+2. Add loop_times to training params
 
 
 [ ] Have GAN estimate multiple classes at once. This may help push the NN in the right direction,
