@@ -1,6 +1,5 @@
 TODOs:
 
-1. Separate global and local variables
 2. Split GAN class into Generator, Discriminator, and GAN
 3. Save accuracies and losses to arrays and plot them
 4. Run GAN from scratch using a maximally trained Blackbox
