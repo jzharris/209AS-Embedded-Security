@@ -2,6 +2,7 @@ TODOs:
 
 1. Make adaptive G/D training triggers - based on whether the training is stalling for G or D
 2. Add loop_times to training params
+3. Add percentage of test acc to training params
 
 
 [ ] Have GAN estimate multiple classes at once. This may help push the NN in the right direction,
