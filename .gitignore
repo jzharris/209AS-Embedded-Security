@@ -13,5 +13,6 @@ blackbox_e*/
 b_e*/
 
 # Main - GAN Attacks
+checkpoints/
 it_*/
 default/
