@@ -1,7 +1,9 @@
 TODOs:
 
-1. Create a second GAN, one that will try to maximize the loss of the BB model - which should
+1. Print out the metrics displayed by the pbars, for when viewing the ipynb a second time
+2. Create a second GAN, one that will try to maximize the loss of the BB model - which should
 help our Discriminator converge to BB
+3. Save G imgs every iteration and append them to the query
 
 ** For some reason Step 2 has a bug where the test accuracy never changes at all, regardless
 of training the discriminator...maybe something doesn't clear itself out? Bad loss?
