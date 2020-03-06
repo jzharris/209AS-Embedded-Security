@@ -1,11 +1,18 @@
 ### TODOs
 
 1. [x] Make it so we don't have to train BB every time we want to query
-2. Save G imgs every iteration and append them to the query
+2. [x] Save G imgs every iteration and append them to the query
 3. Create a second GAN, one that will try to maximize the loss of the BB model - which should
 help our Discriminator converge to BB
-4. Print out the metrics displayed by the pbars, for when viewing the ipynb a second time
-5. Add labels to generate_images()
+    * have a measure of 'uncertainty', that doesn't depend on the right answer only how
+      certain the D thinks the image is (we want D to be very certain of SOMETHING)
+        * maybe use [Monte Carlo dropout](https://towardsdatascience.com/is-your-algorithm-confident-enough-1b20dfe2db08)?
+    * NOT a conditional GAN - use original architecture for G, use the same D
+4. [x] Print out the metrics displayed by the pbars, for when viewing the ipynb a second time
+5. [x] Add labels to generate_images()
+6. Output summary of iteration at end of each iter. Append current accs to lists and display at
+end of each iteration for easy access
+7. Add regularization/extra loss to encourage displaying nothing at all as opposed to noise
 * [x] nudge inc is not resetting
 
 ### Latest notes
