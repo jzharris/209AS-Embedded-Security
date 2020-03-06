@@ -1,9 +1,12 @@
 ### TODOs
 
-1. Print out the metrics displayed by the pbars, for when viewing the ipynb a second time
-2. Create a second GAN, one that will try to maximize the loss of the BB model - which should
+1. [x] Make it so we don't have to train BB every time we want to query
+2. Save G imgs every iteration and append them to the query
+3. Create a second GAN, one that will try to maximize the loss of the BB model - which should
 help our Discriminator converge to BB
-3. Save G imgs every iteration and append them to the query
+4. Print out the metrics displayed by the pbars, for when viewing the ipynb a second time
+5. Add labels to generate_images()
+* [x] nudge inc is not resetting
 
 ### Latest notes
 
@@ -22,3 +25,4 @@ have been bad in the beginning but might now perform very well on the new D. So 
 all interm (stable) G's and their output.
 * Also, do we need to prime BB every time? If BB is high enough acc then stop priming it.
     * Add dropout to D so that getting the 0.098 issue will be harder to do
+* Only nudge the classes that aren't performing well??
