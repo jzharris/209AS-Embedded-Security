@@ -13,8 +13,9 @@ help our Discriminator converge to BB
 6. Output summary of iteration at end of each iter. Append current accs to lists and display at
 end of each iteration for easy access
 7. Add regularization/extra loss to encourage displaying nothing at all as opposed to noise?
-8. Lower the batch size of uGAN to see if we can get more than a single unique image generated
+8. [x] Lower the batch size of uGAN to see if we can get more than a single unique image generated
 each time
+    * didn't help
 * [x] nudge inc is not resetting
 
 ### Latest notes
