@@ -1,0 +1,1 @@
+Run 10: VALID test showing that uGAN is not providing good enough images. Let's try FGSM next.

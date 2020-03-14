@@ -16,5 +16,6 @@ b_e*/
 
 # Main - GAN Attacks
 checkpoints/
+!*.md
 it_*/
 default/

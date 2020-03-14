@@ -1,0 +1,1 @@
+Run 11: overnight, FGSM L1, no nudge -> seemed to get stuck (cGAN may need nudging)
