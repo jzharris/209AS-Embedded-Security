@@ -17,7 +17,7 @@ Run 16: another baseline, but training BB more frequently WITHOUT NUDGING
 | 12     | 98.0%  | 84.63% | 46.0%  |
 | 13     | 98.0%  |        | 49.9%  |
 | 14     | 96.0%  | 89.09% | 36.4%  |
-| 15     | 97.0%  | 89.09% | 31.5%  |
+| 15     | 97.0%  |        | 31.5%  |
 
 Not nudging degrades D acc over time
 
