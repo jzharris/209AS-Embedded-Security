@@ -1,12 +1,11 @@
 # Combatting the Vulnerabilities of Split Learning
 
-# Title
-# Header 1
+<!-- # Header 1
 ## Header 2
 ### Header 3
 #### Header 4
 ##### Header 5
-###### Header 6
+###### Header 6 -->
 
 ### Authors
 * Zach Harris: UCLA, M.S. in ECE, _jzharris@g.ucla.edu_
@@ -26,37 +25,37 @@ label flipping attacks [[3-5]](#3) and backdoor attacks [[6-7]](#6).
 Secondly, we introduce Split Learning [[8-15]](#8) and investigate its susceptibility to label flipping and backdoor attacks. 
 ==Lastly, we present methods to prevent or mitigate attacks on Split Learning inspired from previous mitigation methods [[16-17]](#16).==
 
-### Background
+## Background
 
-##### Standard Approaches to Distributed Deep Learning
+### Standard Approaches to Distributed Deep Learning
 
-###### Federated Learning
+### Federated Learning
 
-###### Large Batch Synchronous SGD
+##### Large Batch Synchronous SGD
 
 
-##### Split Learning
+### Split Learning
 
 The three methods of Split Learning
 
-###### Security Benefits
+##### Security Benefits
 
 
-##### Generative Adversarial Networks (GANs)
+### Generative Adversarial Networks (GANs)
 
-### Overall Project Goals
+## Overall Project Goals
 
-##### What we are doing
+### What we are doing
 
 Investigating data privacy and model poisoning vulnerabilities for systems using the Split Learning paradigm to train a shared model.
 
-##### Why it is important
+### Why it is important
 
 To show that two claims [[9]](#9) made by Split Learning are invalid:
 1. Keeps training data of clients private
 2. Mitigates malicious attacks by making a portion of the shared model off-limits to clients
 
-##### How it is done today
+### How it is done today
 
 No previous work has shown the vulnerabilities of Split Learning. We extend present state-of-the-art methods to attack Split Learning.
 
@@ -68,7 +67,7 @@ No previous work has shown the vulnerabilities of Split Learning. We extend pres
     - Black-box trojan detection [[16]](#16)
     - Mitigating federated learning poinsoning [[17]](#17) -->
 
-### Specific Aims
+## Specific Aims
 
 1. Gather statistics for performing label poisoning and black-box attacks
 2. Simulate the Split Learning method
@@ -77,32 +76,32 @@ No previous work has shown the vulnerabilities of Split Learning. We extend pres
 5. Evaluate vulnerability of Split Learning to a data estimation attack
 
 
-### Technical Approach
+## Technical Approach
 
-##### Label Poisoning Attack
+### Label Poisoning Attack
 
-##### GAN Poisoning Attack
+### GAN Poisoning Attack
 
-##### GAN System Verification
+### GAN System Verification
 
-##### Black-box Attack
-
-
-### Implementation
+### Black-box Attack
 
 
-### Experiments
-
-##### Experiment 1: Label Poisoning
-
-##### Experiment 2: GAN System Verification
-
-##### Experiment 3: GAN Black-box Attack
-
-##### Experiment 4: Label Poisoning using GAN Images
+## Implementation
 
 
-### Success Metrics
+## Experiments
+
+### Experiment 1: Label Poisoning
+
+### Experiment 2: GAN System Verification
+
+### Experiment 3: GAN Black-box Attack
+
+### Experiment 4: Label Poisoning using GAN Images
+
+
+## Success Metrics
 
 <!-- 1. Show that we can approximate the Black-box model
     - Black-box complexity
@@ -121,7 +120,7 @@ No previous work has shown the vulnerabilities of Split Learning. We extend pres
 
 ![](Eval_0_clean.gif) -->
 
-### Citations
+## Citations
 
 ##### Vulnerabilities of Federated Learning
 
