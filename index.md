@@ -86,6 +86,10 @@ No previous work has shown the vulnerabilities of Split Learning. We extend pres
 
 ### B. GAN Poisoning Attack
 
+##### 8-step process
+
+![](report/8steps.gif)
+
 ### C. GAN System Verification
 
 ### D. Black-box Attack
@@ -128,10 +132,6 @@ No previous work has shown the vulnerabilities of Split Learning. We extend pres
 
 4. Perform backdoor label poisoning attacks [[6-7]](#6)
 5. Evaluate Split Learning attack detection and prevention methods [[16-17]](#16) -->
-
-<!-- ### TEST
-
-![](Eval_0_clean.gif) -->
 
 ## VII. Results
 
