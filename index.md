@@ -1,5 +1,13 @@
 # Combatting the Vulnerabilities of Split Learning
 
+# Title
+# Header 1
+## Header 2
+### Header 3
+#### Header 4
+##### Header 5
+###### Header 6
+
 ### Authors
 * Zach Harris: UCLA, M.S. in ECE, _jzharris@g.ucla.edu_
 * Hamza Khan: UCLA, M.S. in ECE, _hamzakhan@g.ucla.edu_
@@ -16,7 +24,7 @@ method have not been fully investigated, however. In this work, we first present
 involving raw data retrieval and input data poisoning [[1-2]](#1), focussing on 
 label flipping attacks [[3-5]](#3) and backdoor attacks [[6-7]](#6). 
 Secondly, we introduce Split Learning [[8-15]](#8) and investigate its susceptibility to label flipping and backdoor attacks. 
-Lastly, we present methods to prevent or mitigate attacks on Split Learning inspired from previous mitigation methods [[16-17]](#16).
+==Lastly, we present methods to prevent or mitigate attacks on Split Learning inspired from previous mitigation methods [[16-17]](#16).==
 
 ### Background
 
@@ -84,6 +92,14 @@ No previous work has shown the vulnerabilities of Split Learning. We extend pres
 
 
 ### Experiments
+
+##### Experiment 1: Label Poisoning
+
+##### Experiment 2: GAN System Verification
+
+##### Experiment 3: GAN Black-box Attack
+
+##### Experiment 4: Label Poisoning using GAN Images
 
 
 ### Success Metrics
