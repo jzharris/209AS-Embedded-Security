@@ -43,6 +43,10 @@ Lastly, we present methods to prevent or mitigate attacks on Split Learning insp
 4. Perform backdoor label poisoning attacks [[6-7]](#6)
 5. Evaluate Split Learning attack detection and prevention methods [[16-17]](#16)
 
+### TEST
+
+![](Eval_0_clean.gif)
+
 ### Citations
 
 ##### Vulnerabilities of Federated Learning
