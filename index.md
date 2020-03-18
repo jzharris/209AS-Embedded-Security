@@ -4,7 +4,7 @@
 * Zach Harris: UCLA, M.S. in ECE, _jzharris@g.ucla.edu_
 * Hamza Khan: UCLA, M.S. in ECE, _hamzakhan@g.ucla.edu_
 
-##### subsubsection
+###### subsubsection
 
 ### Abstract
 As big data analytics becomes rooted in critical fields such as health, finance, economics, and politics,
