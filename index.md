@@ -43,7 +43,7 @@ Secondly, we introduce Split Learning [[8-15]](#8) and investigate its susceptib
 ##### Security Benefits
 
 
-### Generative Adversarial Networks (GANs)
+### C. Generative Adversarial Networks (GANs)
 
 <!-- ## Overall Project Goals -->
 ## III. Motivation
