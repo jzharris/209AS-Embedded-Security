@@ -4,8 +4,6 @@
 * Zach Harris: UCLA, M.S. in ECE, _jzharris@g.ucla.edu_
 * Hamza Khan: UCLA, M.S. in ECE, _hamzakhan@g.ucla.edu_
 
-###### subsubsection
-
 ### Abstract
 As big data analytics becomes rooted in critical fields such as health, finance, economics, and politics,
 the privacy and integrity of the training data must be upheld. For example, health information from patients is confidential
@@ -20,19 +18,77 @@ label flipping attacks [[3-5]](#3) and backdoor attacks [[6-7]](#6).
 Secondly, we introduce Split Learning [[8-15]](#8) and investigate its susceptibility to label flipping and backdoor attacks. 
 Lastly, we present methods to prevent or mitigate attacks on Split Learning inspired from previous mitigation methods [[16-17]](#16).
 
-### Project Goals and Specific Aims
+### Background
 
-1. Simulate Split Learning
+##### Standard Approaches to Distributed Deep Learning
+
+###### Federated Learning
+
+###### Large Batch Synchronous SGD
+
+
+##### Split Learning
+
+The three methods of Split Learning
+
+###### Security Benefits
+
+
+##### Generative Adversarial Networks (GANs)
+
+### Overall Project Goals
+
+##### What we are doing
+
+Investigating data privacy and model poisoning vulnerabilities for systems using the Split Learning paradigm to train a shared model.
+
+##### Why it is important
+
+To show that two claims [[9]](#9) made by Split Learning are invalid:
+1. Keeps training data of clients private
+2. Mitigates malicious attacks by making a portion of the shared model off-limits to clients
+
+##### How it is done today
+
+No previous work has shown the vulnerabilities of Split Learning. We extend present state-of-the-art methods to attack Split Learning.
+
+<!-- 1. Simulate Split Learning
 2. Present the vulernabilities of Split Learning
     - Label poisoning attacks [[3-5]](#3)
     - Backdoor attacks [[6-7]](#6)
 3. Harden Split Learning
     - Black-box trojan detection [[16]](#16)
-    - Mitigating federated learning poinsoning [[17]](#17)
+    - Mitigating federated learning poinsoning [[17]](#17) -->
+
+### Specific Aims
+
+1. Gather statistics for performing label poisoning and black-box attacks
+2. Simulate the Split Learning method
+3. Approximate Split Learning’s black-box model
+4. Evaluate vulnerability of Split Learning to a label poisoning attack
+5. Evaluate vulnerability of Split Learning to a data estimation attack
+
+
+### Technical Approach
+
+##### Label Poisoning Attack
+
+##### GAN Poisoning Attack
+
+##### GAN System Verification
+
+##### Black-box Attack
+
+
+### Implementation
+
 
 ### Experiments
 
-1. Show that we can approximate the Black-box model
+
+### Success Metrics
+
+<!-- 1. Show that we can approximate the Black-box model
     - Black-box complexity
     - Black-box accuracy
     
@@ -43,11 +99,11 @@ Lastly, we present methods to prevent or mitigate attacks on Split Learning insp
     - Use gradient techniques to improve GAN attack performance
 
 4. Perform backdoor label poisoning attacks [[6-7]](#6)
-5. Evaluate Split Learning attack detection and prevention methods [[16-17]](#16)
+5. Evaluate Split Learning attack detection and prevention methods [[16-17]](#16) -->
 
-### TEST
+<!-- ### TEST
 
-![](Eval_0_clean.gif)
+![](Eval_0_clean.gif) -->
 
 ### Citations
 
@@ -124,5 +180,31 @@ Lastly, we present methods to prevent or mitigate attacks on Split Learning insp
     </li>
     <li id="17">
     Fung, Clement, Chris JM Yoon, and Ivan Beschastnikh. "Mitigating sybils in federated learning poisoning." arXiv preprint arXiv:1808.04866 (2018).
+    </li>
+</ol>
+
+##### Black-box model attacks
+<ol start="18">
+    <li id="18">
+    https://github.com/MadryLab/mnist_challenge#black-box-leaderboard-original-challenge
+    </li>
+    <li id="19">
+    Ilyas, Andrew, et al. "Black-box adversarial attacks with limited queries and information." arXiv preprint arXiv:1804.08598 (2018).
+    </li>
+    <li id="20">
+    Xiao, Chaowei, et al. "Generating adversarial examples with adversarial networks." arXiv preprint arXiv:1801.02610 (2018).
+    </li>
+</ol>
+
+##### PGD-based black-box attacks
+<ol start="21">
+    <li id="21">
+    Madry, Aleksander, et al. "Towards deep learning models resistant to adversarial attacks." arXiv preprint arXiv:1706.06083 (2017).
+    </li>
+    <li id="22">
+    Goodfellow, Ian J., Jonathon Shlens, and Christian Szegedy. "Explaining and harnessing adversarial examples." arXiv preprint arXiv:1412.6572 (2014).
+    </li>
+    <li id="23">
+    Papernot, Nicolas, et al. "Practical black-box attacks against machine learning." Proceedings of the 2017 ACM on Asia conference on computer and communications security. 2017.
     </li>
 </ol>
