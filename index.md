@@ -25,7 +25,9 @@ label flipping attacks [[3-5]](#3) and backdoor attacks [[6-7]](#6).
 Secondly, we introduce Split Learning [[8-15]](#8) and investigate its susceptibility to label flipping and backdoor attacks. 
 ==Lastly, we present methods to prevent or mitigate attacks on Split Learning inspired from previous mitigation methods [[16-17]](#16).==
 
-## Background
+## I. Introduction
+
+## II. Background
 
 ### A. Standard Approaches to Distributed Deep Learning
 
@@ -36,7 +38,7 @@ Secondly, we introduce Split Learning [[8-15]](#8) and investigate its susceptib
 
 ### B. Split Learning
 
-The three methods of Split Learning
+##### Methods
 
 ##### Security Benefits
 
@@ -44,7 +46,7 @@ The three methods of Split Learning
 ### Generative Adversarial Networks (GANs)
 
 <!-- ## Overall Project Goals -->
-## Motivation
+## III. Motivation
 
 ### A. What we are doing
 
@@ -68,7 +70,7 @@ No previous work has shown the vulnerabilities of Split Learning. We extend pres
     - Black-box trojan detection [[16]](#16)
     - Mitigating federated learning poinsoning [[17]](#17) -->
 
-## Specific Aims
+### D. Specific Aims
 
 1. Gather statistics for performing label poisoning and black-box attacks
 2. Simulate the Split Learning method
@@ -77,44 +79,42 @@ No previous work has shown the vulnerabilities of Split Learning. We extend pres
 5. Evaluate vulnerability of Split Learning to a data estimation attack
 
 
-## Technical Approach
+<!-- ## Technical Approach -->
+## IV. Methods
 
-### Label Poisoning Attack
+### A. Label Poisoning Attack
 
-### GAN Poisoning Attack
+### B. GAN Poisoning Attack
 
-### GAN System Verification
+### C. GAN System Verification
 
-### Black-box Attack
+### D. Black-box Attack
 
 
-## Implementation
+## V. Implementation
 
 ### A. Split Learning simulation
 
 ### B. Attack setup
 
 
-## Experiments
+## VI. Experiments
 
 ### A. Label Poisoning
 
-### B. GAN System Verification
-
-### C. GAN Black-box Attack
-
-### D. Label Poisoning using GAN Images
-
-
-## Success Metrics
-
-### A. Label Poisoning
+##### Success metrics
 
 ### B. GAN System Verification
 
+##### Success metrics
+
 ### C. GAN Black-box Attack
 
+##### Success metrics
+
 ### D. Label Poisoning using GAN Images
+
+##### Success metrics
 
 <!-- 1. Show that we can approximate the Black-box model
     - Black-box complexity
@@ -133,7 +133,7 @@ No previous work has shown the vulnerabilities of Split Learning. We extend pres
 
 ![](Eval_0_clean.gif) -->
 
-## Results
+## VII. Results
 
 ### A. Label Poisoning
 
@@ -143,13 +143,13 @@ No previous work has shown the vulnerabilities of Split Learning. We extend pres
 
 ### D. Label Poisoning using GAN Images
 
-## Related Work
+## VIII. Related Work
 
 <!-- TODO: add Black-box attack papers -->
 
-## Conclusion
+## IX. Conclusion
 
-## Citations
+## X. Citations
 
 ##### Vulnerabilities of Federated Learning
 
