@@ -1,0 +1,1746 @@
+Redoing [2, 3, 4, 5, 6, 8, 9] for longer
+
+
+
+Filtering from  901  to  697  images
+----------
+Starting iteration  0
+train_acc=93.95%: 100%
+792/792 [08:00<00:00, 1.65it/s]
+
+train_acc=93.9470%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_32\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_32\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_32\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_32\split_end_model_checkpoint\checkpoint
+
+ Evaluating accuracy on all data
+Train Accuracy: 0.939 | Loss: 1.522
+Test Accuracy: 0.963 | Loss: 1.498
+
+Evaluating accuracy on input  0
+Train Accuracy: 0.939 | Loss: 1.522
+Test Accuracy: 0.966 | Loss: 1.494
+
+Evaluating accuracy on input  1
+Train Accuracy: 0.939 | Loss: 1.522
+Test Accuracy: 0.918 | Loss: 1.544
+
+Evaluating accuracy on input  2
+Train Accuracy: 0.939 | Loss: 1.522
+Test Accuracy: 0.979 | Loss: 1.479
+
+Evaluating accuracy on input  3
+Train Accuracy: 0.939 | Loss: 1.522
+Test Accuracy: 0.980 | Loss: 1.479
+
+Evaluating accuracy on input  4
+Train Accuracy: 0.939 | Loss: 1.522
+Test Accuracy: 0.973 | Loss: 1.487
+
+Evaluating accuracy on input  5
+Train Accuracy: 0.939 | Loss: 1.522
+Test Accuracy: 0.978 | Loss: 1.486
+
+Evaluating accuracy on input  6
+Train Accuracy: 0.939 | Loss: 1.522
+Test Accuracy: 0.987 | Loss: 1.474
+
+Evaluating accuracy on input  7
+Train Accuracy: 0.939 | Loss: 1.522
+Test Accuracy: 0.923 | Loss: 1.525
+
+Evaluating accuracy on input  8
+Train Accuracy: 0.939 | Loss: 1.522
+Test Accuracy: 0.977 | Loss: 1.483
+
+Evaluating accuracy on input  9
+Train Accuracy: 0.939 | Loss: 1.522
+Test Accuracy: 0.960 | Loss: 1.501
+
+Evaluating accuracy on poisoned input from  1  to  7
+Train Accuracy: 0.939 | Loss: 1.522
+Test Accuracy: 0.004 | Loss: 2.455
+
+----------
+Starting iteration  1
+train_acc=96.20%: 100%
+792/792 [06:52<00:00, 1.92it/s]
+
+train_acc=96.2048%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_33\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_33\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_33\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_33\split_end_model_checkpoint\checkpoint
+
+ Evaluating accuracy on all data
+Train Accuracy: 0.962 | Loss: 1.499
+Test Accuracy: 0.958 | Loss: 1.503
+
+Evaluating accuracy on input  0
+Train Accuracy: 0.962 | Loss: 1.499
+Test Accuracy: 0.969 | Loss: 1.492
+
+Evaluating accuracy on input  1
+Train Accuracy: 0.962 | Loss: 1.499
+Test Accuracy: 0.901 | Loss: 1.561
+
+Evaluating accuracy on input  2
+Train Accuracy: 0.962 | Loss: 1.499
+Test Accuracy: 0.973 | Loss: 1.482
+
+Evaluating accuracy on input  3
+Train Accuracy: 0.962 | Loss: 1.499
+Test Accuracy: 0.976 | Loss: 1.485
+
+Evaluating accuracy on input  4
+Train Accuracy: 0.962 | Loss: 1.499
+Test Accuracy: 0.990 | Loss: 1.472
+
+Evaluating accuracy on input  5
+Train Accuracy: 0.962 | Loss: 1.499
+Test Accuracy: 0.982 | Loss: 1.482
+
+Evaluating accuracy on input  6
+Train Accuracy: 0.962 | Loss: 1.499
+Test Accuracy: 0.984 | Loss: 1.476
+
+Evaluating accuracy on input  7
+Train Accuracy: 0.962 | Loss: 1.499
+Test Accuracy: 0.891 | Loss: 1.549
+
+Evaluating accuracy on input  8
+Train Accuracy: 0.962 | Loss: 1.499
+Test Accuracy: 0.977 | Loss: 1.484
+
+Evaluating accuracy on input  9
+Train Accuracy: 0.962 | Loss: 1.499
+Test Accuracy: 0.946 | Loss: 1.513
+
+Evaluating accuracy on poisoned input from  1  to  7
+Train Accuracy: 0.962 | Loss: 1.499
+Test Accuracy: 0.003 | Loss: 2.456
+
+----------
+Starting iteration  2
+train_acc=96.52%: 100%
+792/792 [07:26<00:00, 1.77it/s]
+
+train_acc=96.5213%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_34\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_34\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_34\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_34\split_end_model_checkpoint\checkpoint
+
+ Evaluating accuracy on all data
+Train Accuracy: 0.965 | Loss: 1.496
+Test Accuracy: 0.952 | Loss: 1.508
+
+Evaluating accuracy on input  0
+Train Accuracy: 0.965 | Loss: 1.496
+Test Accuracy: 0.937 | Loss: 1.524
+
+Evaluating accuracy on input  1
+Train Accuracy: 0.965 | Loss: 1.496
+Test Accuracy: 0.892 | Loss: 1.572
+
+Evaluating accuracy on input  2
+Train Accuracy: 0.965 | Loss: 1.496
+Test Accuracy: 0.974 | Loss: 1.482
+
+Evaluating accuracy on input  3
+Train Accuracy: 0.965 | Loss: 1.496
+Test Accuracy: 0.985 | Loss: 1.476
+
+Evaluating accuracy on input  4
+Train Accuracy: 0.965 | Loss: 1.496
+Test Accuracy: 0.983 | Loss: 1.478
+
+Evaluating accuracy on input  5
+Train Accuracy: 0.965 | Loss: 1.496
+Test Accuracy: 0.988 | Loss: 1.476
+
+Evaluating accuracy on input  6
+Train Accuracy: 0.965 | Loss: 1.496
+Test Accuracy: 0.984 | Loss: 1.477
+
+Evaluating accuracy on input  7
+Train Accuracy: 0.965 | Loss: 1.496
+Test Accuracy: 0.867 | Loss: 1.569
+
+Evaluating accuracy on input  8
+Train Accuracy: 0.965 | Loss: 1.496
+Test Accuracy: 0.968 | Loss: 1.489
+
+Evaluating accuracy on input  9
+Train Accuracy: 0.965 | Loss: 1.496
+Test Accuracy: 0.961 | Loss: 1.499
+
+Evaluating accuracy on poisoned input from  1  to  7
+Train Accuracy: 0.965 | Loss: 1.496
+Test Accuracy: 0.004 | Loss: 2.455
+
+----------
+Starting iteration  3
+train_acc=96.72%: 100%
+792/792 [14:55<00:00, 1.13s/it]
+
+train_acc=96.7244%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_35\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_35\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_35\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_35\split_end_model_checkpoint\checkpoint
+
+ Evaluating accuracy on all data
+Train Accuracy: 0.967 | Loss: 1.495
+Test Accuracy: 0.952 | Loss: 1.508
+
+Evaluating accuracy on input  0
+Train Accuracy: 0.967 | Loss: 1.495
+Test Accuracy: 0.938 | Loss: 1.523
+
+Evaluating accuracy on input  1
+Train Accuracy: 0.967 | Loss: 1.495
+Test Accuracy: 0.907 | Loss: 1.553
+
+Evaluating accuracy on input  2
+Train Accuracy: 0.967 | Loss: 1.495
+Test Accuracy: 0.985 | Loss: 1.473
+
+Evaluating accuracy on input  3
+Train Accuracy: 0.967 | Loss: 1.495
+Test Accuracy: 0.974 | Loss: 1.486
+
+Evaluating accuracy on input  4
+Train Accuracy: 0.967 | Loss: 1.495
+Test Accuracy: 0.986 | Loss: 1.475
+
+Evaluating accuracy on input  5
+Train Accuracy: 0.967 | Loss: 1.495
+Test Accuracy: 0.991 | Loss: 1.472
+
+Evaluating accuracy on input  6
+Train Accuracy: 0.967 | Loss: 1.495
+Test Accuracy: 0.986 | Loss: 1.473
+
+Evaluating accuracy on input  7
+Train Accuracy: 0.967 | Loss: 1.495
+Test Accuracy: 0.824 | Loss: 1.603
+
+Evaluating accuracy on input  8
+Train Accuracy: 0.967 | Loss: 1.495
+Test Accuracy: 0.970 | Loss: 1.491
+
+Evaluating accuracy on input  9
+Train Accuracy: 0.967 | Loss: 1.495
+Test Accuracy: 0.974 | Loss: 1.487
+
+Evaluating accuracy on poisoned input from  1  to  7
+Train Accuracy: 0.967 | Loss: 1.495
+Test Accuracy: 0.004 | Loss: 2.456
+
+----------
+Starting iteration  4
+train_acc=96.97%: 100%
+792/792 [06:56<00:00, 1.90it/s]
+
+train_acc=96.9660%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_36\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_36\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_36\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_36\split_end_model_checkpoint\checkpoint
+
+ Evaluating accuracy on all data
+Train Accuracy: 0.970 | Loss: 1.492
+Test Accuracy: 0.938 | Loss: 1.523
+
+Evaluating accuracy on input  0
+Train Accuracy: 0.970 | Loss: 1.492
+Test Accuracy: 0.906 | Loss: 1.556
+
+Evaluating accuracy on input  1
+Train Accuracy: 0.970 | Loss: 1.492
+Test Accuracy: 0.890 | Loss: 1.575
+
+Evaluating accuracy on input  2
+Train Accuracy: 0.970 | Loss: 1.492
+Test Accuracy: 0.984 | Loss: 1.472
+
+Evaluating accuracy on input  3
+Train Accuracy: 0.970 | Loss: 1.492
+Test Accuracy: 0.982 | Loss: 1.479
+
+Evaluating accuracy on input  4
+Train Accuracy: 0.970 | Loss: 1.492
+Test Accuracy: 0.978 | Loss: 1.482
+
+Evaluating accuracy on input  5
+Train Accuracy: 0.970 | Loss: 1.492
+Test Accuracy: 0.989 | Loss: 1.474
+
+Evaluating accuracy on input  6
+Train Accuracy: 0.970 | Loss: 1.492
+Test Accuracy: 0.987 | Loss: 1.473
+
+Evaluating accuracy on input  7
+Train Accuracy: 0.970 | Loss: 1.492
+Test Accuracy: 0.737 | Loss: 1.685
+
+Evaluating accuracy on input  8
+Train Accuracy: 0.970 | Loss: 1.492
+Test Accuracy: 0.972 | Loss: 1.486
+
+Evaluating accuracy on input  9
+Train Accuracy: 0.970 | Loss: 1.492
+Test Accuracy: 0.973 | Loss: 1.488
+
+Evaluating accuracy on poisoned input from  1  to  7
+Train Accuracy: 0.970 | Loss: 1.492
+Test Accuracy: 0.003 | Loss: 2.457
+
+----------
+Starting iteration  5
+train_acc=96.85%: 100%
+792/792 [11:12<00:00, 1.18it/s]
+
+train_acc=96.8527%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_37\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_37\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_37\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_37\split_end_model_checkpoint\checkpoint
+
+ Evaluating accuracy on all data
+Train Accuracy: 0.969 | Loss: 1.493
+Test Accuracy: 0.943 | Loss: 1.517
+
+Evaluating accuracy on input  0
+Train Accuracy: 0.969 | Loss: 1.493
+Test Accuracy: 0.936 | Loss: 1.527
+
+Evaluating accuracy on input  1
+Train Accuracy: 0.969 | Loss: 1.493
+Test Accuracy: 0.907 | Loss: 1.552
+
+Evaluating accuracy on input  2
+Train Accuracy: 0.969 | Loss: 1.493
+Test Accuracy: 0.991 | Loss: 1.468
+
+Evaluating accuracy on input  3
+Train Accuracy: 0.969 | Loss: 1.493
+Test Accuracy: 0.977 | Loss: 1.484
+
+Evaluating accuracy on input  4
+Train Accuracy: 0.969 | Loss: 1.493
+Test Accuracy: 0.982 | Loss: 1.478
+
+Evaluating accuracy on input  5
+Train Accuracy: 0.969 | Loss: 1.493
+Test Accuracy: 0.987 | Loss: 1.478
+
+Evaluating accuracy on input  6
+Train Accuracy: 0.969 | Loss: 1.493
+Test Accuracy: 0.987 | Loss: 1.472
+
+Evaluating accuracy on input  7
+Train Accuracy: 0.969 | Loss: 1.493
+Test Accuracy: 0.720 | Loss: 1.743
+
+Evaluating accuracy on input  8
+Train Accuracy: 0.969 | Loss: 1.493
+Test Accuracy: 0.973 | Loss: 1.489
+
+Evaluating accuracy on input  9
+Train Accuracy: 0.969 | Loss: 1.493
+Test Accuracy: 0.984 | Loss: 1.478
+
+Evaluating accuracy on poisoned input from  1  to  7
+Train Accuracy: 0.969 | Loss: 1.493
+Test Accuracy: 0.004 | Loss: 2.456
+
+----------
+Starting iteration  6
+train_acc=97.16%: 100%
+792/792 [06:53<00:00, 1.91it/s]
+
+train_acc=97.1563%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_38\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_38\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_38\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_38\split_end_model_checkpoint\checkpoint
+
+ Evaluating accuracy on all data
+Train Accuracy: 0.972 | Loss: 1.490
+Test Accuracy: 0.929 | Loss: 1.532
+
+Evaluating accuracy on input  0
+Train Accuracy: 0.972 | Loss: 1.490
+Test Accuracy: 0.929 | Loss: 1.533
+
+Evaluating accuracy on input  1
+Train Accuracy: 0.972 | Loss: 1.490
+Test Accuracy: 0.846 | Loss: 1.616
+
+Evaluating accuracy on input  2
+Train Accuracy: 0.972 | Loss: 1.490
+Test Accuracy: 0.987 | Loss: 1.471
+
+Evaluating accuracy on input  3
+Train Accuracy: 0.972 | Loss: 1.490
+Test Accuracy: 0.974 | Loss: 1.488
+
+Evaluating accuracy on input  4
+Train Accuracy: 0.972 | Loss: 1.490
+Test Accuracy: 0.983 | Loss: 1.478
+
+Evaluating accuracy on input  5
+Train Accuracy: 0.972 | Loss: 1.490
+Test Accuracy: 0.989 | Loss: 1.475
+
+Evaluating accuracy on input  6
+Train Accuracy: 0.972 | Loss: 1.490
+Test Accuracy: 0.984 | Loss: 1.475
+
+Evaluating accuracy on input  7
+Train Accuracy: 0.972 | Loss: 1.490
+Test Accuracy: 0.669 | Loss: 1.773
+
+Evaluating accuracy on input  8
+Train Accuracy: 0.972 | Loss: 1.490
+Test Accuracy: 0.982 | Loss: 1.479
+
+Evaluating accuracy on input  9
+Train Accuracy: 0.972 | Loss: 1.490
+Test Accuracy: 0.977 | Loss: 1.486
+
+Evaluating accuracy on poisoned input from  1  to  7
+Train Accuracy: 0.972 | Loss: 1.490
+Test Accuracy: 0.003 | Loss: 2.455
+
+----------
+Starting iteration  7
+train_acc=97.30%: 100%
+792/792 [08:03<00:00, 1.64it/s]
+
+train_acc=97.2996%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_39\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_39\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_39\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_39\split_end_model_checkpoint\checkpoint
+
+ Evaluating accuracy on all data
+Train Accuracy: 0.973 | Loss: 1.489
+Test Accuracy: 0.917 | Loss: 1.544
+
+Evaluating accuracy on input  0
+Train Accuracy: 0.973 | Loss: 1.489
+Test Accuracy: 0.883 | Loss: 1.579
+
+Evaluating accuracy on input  1
+Train Accuracy: 0.973 | Loss: 1.489
+Test Accuracy: 0.820 | Loss: 1.649
+
+Evaluating accuracy on input  2
+Train Accuracy: 0.973 | Loss: 1.489
+Test Accuracy: 0.991 | Loss: 1.468
+
+Evaluating accuracy on input  3
+Train Accuracy: 0.973 | Loss: 1.489
+Test Accuracy: 0.981 | Loss: 1.479
+
+Evaluating accuracy on input  4
+Train Accuracy: 0.973 | Loss: 1.489
+Test Accuracy: 0.975 | Loss: 1.485
+
+Evaluating accuracy on input  5
+Train Accuracy: 0.973 | Loss: 1.489
+Test Accuracy: 0.988 | Loss: 1.475
+
+Evaluating accuracy on input  6
+Train Accuracy: 0.973 | Loss: 1.489
+Test Accuracy: 0.984 | Loss: 1.475
+
+Evaluating accuracy on input  7
+Train Accuracy: 0.973 | Loss: 1.489
+Test Accuracy: 0.617 | Loss: 1.815
+
+Evaluating accuracy on input  8
+Train Accuracy: 0.973 | Loss: 1.489
+Test Accuracy: 0.979 | Loss: 1.481
+
+Evaluating accuracy on input  9
+Train Accuracy: 0.973 | Loss: 1.489
+Test Accuracy: 0.980 | Loss: 1.481
+
+Evaluating accuracy on poisoned input from  1  to  7
+Train Accuracy: 0.973 | Loss: 1.489
+Test Accuracy: 0.002 | Loss: 2.453
+
+----------
+Starting iteration  8
+train_acc=97.33%: 100%
+792/792 [16:22<00:00, 1.24s/it]
+
+train_acc=97.3273%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_40\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_40\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_40\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_40\split_end_model_checkpoint\checkpoint
+
+ Evaluating accuracy on all data
+Train Accuracy: 0.973 | Loss: 1.488
+Test Accuracy: 0.916 | Loss: 1.545
+
+Evaluating accuracy on input  0
+Train Accuracy: 0.973 | Loss: 1.488
+Test Accuracy: 0.917 | Loss: 1.544
+
+Evaluating accuracy on input  1
+Train Accuracy: 0.973 | Loss: 1.488
+Test Accuracy: 0.781 | Loss: 1.687
+
+Evaluating accuracy on input  2
+Train Accuracy: 0.973 | Loss: 1.488
+Test Accuracy: 0.989 | Loss: 1.470
+
+Evaluating accuracy on input  3
+Train Accuracy: 0.973 | Loss: 1.488
+Test Accuracy: 0.983 | Loss: 1.477
+
+Evaluating accuracy on input  4
+Train Accuracy: 0.973 | Loss: 1.488
+Test Accuracy: 0.990 | Loss: 1.472
+
+Evaluating accuracy on input  5
+Train Accuracy: 0.973 | Loss: 1.488
+Test Accuracy: 0.989 | Loss: 1.474
+
+Evaluating accuracy on input  6
+Train Accuracy: 0.973 | Loss: 1.488
+Test Accuracy: 0.984 | Loss: 1.476
+
+Evaluating accuracy on input  7
+Train Accuracy: 0.973 | Loss: 1.488
+Test Accuracy: 0.607 | Loss: 1.824
+
+Evaluating accuracy on input  8
+Train Accuracy: 0.973 | Loss: 1.488
+Test Accuracy: 0.982 | Loss: 1.479
+
+Evaluating accuracy on input  9
+Train Accuracy: 0.973 | Loss: 1.488
+Test Accuracy: 0.977 | Loss: 1.484
+
+Evaluating accuracy on poisoned input from  1  to  7
+Train Accuracy: 0.973 | Loss: 1.488
+Test Accuracy: 0.002 | Loss: 2.453
+
+----------
+Starting iteration  9
+train_acc=97.40%: 100%
+792/792 [07:46<00:00, 1.70it/s]
+
+train_acc=97.3958%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_41\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_41\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_41\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_41\split_end_model_checkpoint\checkpoint
+
+ Evaluating accuracy on all data
+Train Accuracy: 0.974 | Loss: 1.488
+Test Accuracy: 0.901 | Loss: 1.561
+
+Evaluating accuracy on input  0
+Train Accuracy: 0.974 | Loss: 1.488
+Test Accuracy: 0.899 | Loss: 1.560
+
+Evaluating accuracy on input  1
+Train Accuracy: 0.974 | Loss: 1.488
+Test Accuracy: 0.680 | Loss: 1.793
+
+Evaluating accuracy on input  2
+Train Accuracy: 0.974 | Loss: 1.488
+Test Accuracy: 0.981 | Loss: 1.477
+
+Evaluating accuracy on input  3
+Train Accuracy: 0.974 | Loss: 1.488
+Test Accuracy: 0.984 | Loss: 1.476
+
+Evaluating accuracy on input  4
+Train Accuracy: 0.974 | Loss: 1.488
+Test Accuracy: 0.988 | Loss: 1.473
+
+Evaluating accuracy on input  5
+Train Accuracy: 0.974 | Loss: 1.488
+Test Accuracy: 0.987 | Loss: 1.477
+
+Evaluating accuracy on input  6
+Train Accuracy: 0.974 | Loss: 1.488
+Test Accuracy: 0.987 | Loss: 1.473
+
+Evaluating accuracy on input  7
+Train Accuracy: 0.974 | Loss: 1.488
+Test Accuracy: 0.596 | Loss: 1.834
+
+Evaluating accuracy on input  8
+Train Accuracy: 0.974 | Loss: 1.488
+Test Accuracy: 0.980 | Loss: 1.479
+
+Evaluating accuracy on input  9
+Train Accuracy: 0.974 | Loss: 1.488
+Test Accuracy: 0.974 | Loss: 1.487
+
+Evaluating accuracy on poisoned input from  1  to  7
+Train Accuracy: 0.974 | Loss: 1.488
+Test Accuracy: 0.001 | Loss: 2.450
+
+----------
+Starting iteration  10
+train_acc=97.55%: 100%
+792/792 [14:56<00:00, 1.13s/it]
+
+train_acc=97.5454%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_42\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_42\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_42\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_42\split_end_model_checkpoint\checkpoint
+
+ Evaluating accuracy on all data
+Train Accuracy: 0.975 | Loss: 1.486
+Test Accuracy: 0.905 | Loss: 1.557
+
+Evaluating accuracy on input  0
+Train Accuracy: 0.975 | Loss: 1.486
+Test Accuracy: 0.933 | Loss: 1.528
+
+Evaluating accuracy on input  1
+Train Accuracy: 0.975 | Loss: 1.486
+Test Accuracy: 0.681 | Loss: 1.792
+
+Evaluating accuracy on input  2
+Train Accuracy: 0.975 | Loss: 1.486
+Test Accuracy: 0.987 | Loss: 1.472
+
+Evaluating accuracy on input  3
+Train Accuracy: 0.975 | Loss: 1.486
+Test Accuracy: 0.988 | Loss: 1.474
+
+Evaluating accuracy on input  4
+Train Accuracy: 0.975 | Loss: 1.486
+Test Accuracy: 0.983 | Loss: 1.478
+
+Evaluating accuracy on input  5
+Train Accuracy: 0.975 | Loss: 1.486
+Test Accuracy: 0.984 | Loss: 1.479
+
+Evaluating accuracy on input  6
+Train Accuracy: 0.975 | Loss: 1.486
+Test Accuracy: 0.983 | Loss: 1.476
+
+Evaluating accuracy on input  7
+Train Accuracy: 0.975 | Loss: 1.486
+Test Accuracy: 0.597 | Loss: 1.833
+
+Evaluating accuracy on input  8
+Train Accuracy: 0.975 | Loss: 1.486
+Test Accuracy: 0.984 | Loss: 1.477
+
+Evaluating accuracy on input  9
+Train Accuracy: 0.975 | Loss: 1.486
+Test Accuracy: 0.977 | Loss: 1.483
+
+Evaluating accuracy on poisoned input from  1  to  7
+Train Accuracy: 0.975 | Loss: 1.486
+Test Accuracy: 0.001 | Loss: 2.451
+
+----------
+Starting iteration  11
+train_acc=97.69%: 100%
+792/792 [07:16<00:00, 1.81it/s]
+
+train_acc=97.6908%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_43\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_43\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_43\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_43\split_end_model_checkpoint\checkpoint
+
+ Evaluating accuracy on all data
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.900 | Loss: 1.564
+
+Evaluating accuracy on input  0
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.904 | Loss: 1.559
+
+Evaluating accuracy on input  1
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.675 | Loss: 1.808
+
+Evaluating accuracy on input  2
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.987 | Loss: 1.472
+
+Evaluating accuracy on input  3
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.985 | Loss: 1.476
+
+Evaluating accuracy on input  4
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.987 | Loss: 1.474
+
+Evaluating accuracy on input  5
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.990 | Loss: 1.473
+
+Evaluating accuracy on input  6
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.985 | Loss: 1.475
+
+Evaluating accuracy on input  7
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.570 | Loss: 1.908
+
+Evaluating accuracy on input  8
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.986 | Loss: 1.476
+
+Evaluating accuracy on input  9
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.985 | Loss: 1.477
+
+Evaluating accuracy on poisoned input from  1  to  7
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.003 | Loss: 2.450
+
+----------
+Starting iteration  12
+train_acc=97.70%: 100%
+792/792 [08:26<00:00, 1.56it/s]
+
+train_acc=97.6994%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_44\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_44\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_44\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_44\split_end_model_checkpoint\checkpoint
+
+ Evaluating accuracy on all data
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.879 | Loss: 1.585
+
+Evaluating accuracy on input  0
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.866 | Loss: 1.598
+
+Evaluating accuracy on input  1
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.604 | Loss: 1.873
+
+Evaluating accuracy on input  2
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.991 | Loss: 1.468
+
+Evaluating accuracy on input  3
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.977 | Loss: 1.481
+
+Evaluating accuracy on input  4
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.986 | Loss: 1.475
+
+Evaluating accuracy on input  5
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.983 | Loss: 1.480
+
+Evaluating accuracy on input  6
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.985 | Loss: 1.473
+
+Evaluating accuracy on input  7
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.492 | Loss: 1.999
+
+Evaluating accuracy on input  8
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.983 | Loss: 1.477
+
+Evaluating accuracy on input  9
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.983 | Loss: 1.478
+
+Evaluating accuracy on poisoned input from  1  to  7
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.003 | Loss: 2.449
+
+----------
+Starting iteration  13
+train_acc=97.67%: 100%
+792/792 [06:54<00:00, 1.91it/s]
+
+train_acc=97.6652%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_45\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_45\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_45\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_45\split_end_model_checkpoint\checkpoint
+
+ Evaluating accuracy on all data
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.881 | Loss: 1.583
+
+Evaluating accuracy on input  0
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.866 | Loss: 1.592
+
+Evaluating accuracy on input  1
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.580 | Loss: 1.889
+
+Evaluating accuracy on input  2
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.990 | Loss: 1.469
+
+Evaluating accuracy on input  3
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.986 | Loss: 1.476
+
+Evaluating accuracy on input  4
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.982 | Loss: 1.478
+
+Evaluating accuracy on input  5
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.985 | Loss: 1.476
+
+Evaluating accuracy on input  6
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.986 | Loss: 1.474
+
+Evaluating accuracy on input  7
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.532 | Loss: 1.976
+
+Evaluating accuracy on input  8
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.983 | Loss: 1.480
+
+Evaluating accuracy on input  9
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.984 | Loss: 1.477
+
+Evaluating accuracy on poisoned input from  1  to  7
+Train Accuracy: 0.977 | Loss: 1.485
+Test Accuracy: 0.002 | Loss: 2.448
+
+----------
+Starting iteration  14
+train_acc=97.76%: 100%
+792/792 [07:50<00:00, 1.68it/s]
+
+train_acc=97.7614%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_46\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_46\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_46\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_46\split_end_model_checkpoint\checkpoint
+
+ Evaluating accuracy on all data
+Train Accuracy: 0.978 | Loss: 1.484
+Test Accuracy: 0.881 | Loss: 1.583
+
+Evaluating accuracy on input  0
+Train Accuracy: 0.978 | Loss: 1.484
+Test Accuracy: 0.880 | Loss: 1.581
+
+Evaluating accuracy on input  1
+Train Accuracy: 0.978 | Loss: 1.484
+Test Accuracy: 0.615 | Loss: 1.859
+
+Evaluating accuracy on input  2
+Train Accuracy: 0.978 | Loss: 1.484
+Test Accuracy: 0.988 | Loss: 1.470
+
+Evaluating accuracy on input  3
+Train Accuracy: 0.978 | Loss: 1.484
+Test Accuracy: 0.987 | Loss: 1.473
+
+Evaluating accuracy on input  4
+Train Accuracy: 0.978 | Loss: 1.484
+Test Accuracy: 0.982 | Loss: 1.478
+
+Evaluating accuracy on input  5
+Train Accuracy: 0.978 | Loss: 1.484
+Test Accuracy: 0.984 | Loss: 1.480
+
+Evaluating accuracy on input  6
+Train Accuracy: 0.978 | Loss: 1.484
+Test Accuracy: 0.985 | Loss: 1.474
+
+Evaluating accuracy on input  7
+Train Accuracy: 0.978 | Loss: 1.484
+Test Accuracy: 0.481 | Loss: 2.013
+
+Evaluating accuracy on input  8
+Train Accuracy: 0.978 | Loss: 1.484
+Test Accuracy: 0.985 | Loss: 1.475
+
+Evaluating accuracy on input  9
+Train Accuracy: 0.978 | Loss: 1.484
+Test Accuracy: 0.984 | Loss: 1.476
+
+Evaluating accuracy on poisoned input from  1  to  7
+Train Accuracy: 0.978 | Loss: 1.484
+Test Accuracy: 0.003 | Loss: 2.449
+
+----------
+Starting iteration  15
+train_acc=97.69%: 100%
+792/792 [17:20<00:00, 1.31s/it]
+
+train_acc=97.6930%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_47\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_47\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_47\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_47\split_end_model_checkpoint\checkpoint
+
+ Evaluating accuracy on all data
+Train Accuracy: 0.977 | Loss: 1.484
+Test Accuracy: 0.874 | Loss: 1.589
+
+Evaluating accuracy on input  0
+Train Accuracy: 0.977 | Loss: 1.484
+Test Accuracy: 0.872 | Loss: 1.588
+
+Evaluating accuracy on input  1
+Train Accuracy: 0.977 | Loss: 1.484
+Test Accuracy: 0.586 | Loss: 1.881
+
+Evaluating accuracy on input  2
+Train Accuracy: 0.977 | Loss: 1.484
+Test Accuracy: 0.985 | Loss: 1.472
+
+Evaluating accuracy on input  3
+Train Accuracy: 0.977 | Loss: 1.484
+Test Accuracy: 0.987 | Loss: 1.474
+
+Evaluating accuracy on input  4
+Train Accuracy: 0.977 | Loss: 1.484
+Test Accuracy: 0.988 | Loss: 1.473
+
+Evaluating accuracy on input  5
+Train Accuracy: 0.977 | Loss: 1.484
+Test Accuracy: 0.990 | Loss: 1.474
+
+Evaluating accuracy on input  6
+Train Accuracy: 0.977 | Loss: 1.484
+Test Accuracy: 0.987 | Loss: 1.473
+
+Evaluating accuracy on input  7
+Train Accuracy: 0.977 | Loss: 1.484
+Test Accuracy: 0.449 | Loss: 2.046
+
+Evaluating accuracy on input  8
+Train Accuracy: 0.977 | Loss: 1.484
+Test Accuracy: 0.985 | Loss: 1.477
+
+Evaluating accuracy on input  9
+Train Accuracy: 0.977 | Loss: 1.484
+Test Accuracy: 0.980 | Loss: 1.482
+
+Evaluating accuracy on poisoned input from  1  to  7
+Train Accuracy: 0.977 | Loss: 1.484
+Test Accuracy: 0.003 | Loss: 2.448
+
+----------
+Starting iteration  16
+train_acc=97.78%: 100%
+792/792 [08:16<00:00, 1.60it/s]
+
+train_acc=97.7849%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_48\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_48\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_48\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_48\split_end_model_checkpoint\checkpoint
+
+ Evaluating accuracy on all data
+Train Accuracy: 0.978 | Loss: 1.484
+Test Accuracy: 0.861 | Loss: 1.602
+
+Evaluating accuracy on input  0
+Train Accuracy: 0.978 | Loss: 1.484
+Test Accuracy: 0.803 | Loss: 1.652
+
+Evaluating accuracy on input  1
+Train Accuracy: 0.978 | Loss: 1.484
+Test Accuracy: 0.589 | Loss: 1.879
+
+Evaluating accuracy on input  2
+Train Accuracy: 0.978 | Loss: 1.484
+Test Accuracy: 0.989 | Loss: 1.471
+
+Evaluating accuracy on input  3
+Train Accuracy: 0.978 | Loss: 1.484
+Test Accuracy: 0.990 | Loss: 1.471
+
+Evaluating accuracy on input  4
+Train Accuracy: 0.978 | Loss: 1.484
+Test Accuracy: 0.992 | Loss: 1.470
+
+Evaluating accuracy on input  5
+Train Accuracy: 0.978 | Loss: 1.484
+Test Accuracy: 0.989 | Loss: 1.473
+
+Evaluating accuracy on input  6
+Train Accuracy: 0.978 | Loss: 1.484
+Test Accuracy: 0.985 | Loss: 1.474
+
+Evaluating accuracy on input  7
+Train Accuracy: 0.978 | Loss: 1.484
+Test Accuracy: 0.376 | Loss: 2.103
+
+Evaluating accuracy on input  8
+Train Accuracy: 0.978 | Loss: 1.484
+Test Accuracy: 0.983 | Loss: 1.477
+
+Evaluating accuracy on input  9
+Train Accuracy: 0.978 | Loss: 1.484
+Test Accuracy: 0.979 | Loss: 1.482
+
+Evaluating accuracy on poisoned input from  1  to  7
+Train Accuracy: 0.978 | Loss: 1.484
+Test Accuracy: 0.001 | Loss: 2.450
+
+----------
+Starting iteration  17
+train_acc=97.96%: 100%
+792/792 [13:37<00:00, 1.03s/it]
+
+train_acc=97.9602%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_49\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_49\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_49\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_49\split_end_model_checkpoint\checkpoint
+
+ Evaluating accuracy on all data
+Train Accuracy: 0.980 | Loss: 1.482
+Test Accuracy: 0.881 | Loss: 1.581
+
+Evaluating accuracy on input  0
+Train Accuracy: 0.980 | Loss: 1.482
+Test Accuracy: 0.830 | Loss: 1.627
+
+Evaluating accuracy on input  1
+Train Accuracy: 0.980 | Loss: 1.482
+Test Accuracy: 0.708 | Loss: 1.765
+
+Evaluating accuracy on input  2
+Train Accuracy: 0.980 | Loss: 1.482
+Test Accuracy: 0.989 | Loss: 1.470
+
+Evaluating accuracy on input  3
+Train Accuracy: 0.980 | Loss: 1.482
+Test Accuracy: 0.984 | Loss: 1.477
+
+Evaluating accuracy on input  4
+Train Accuracy: 0.980 | Loss: 1.482
+Test Accuracy: 0.986 | Loss: 1.474
+
+Evaluating accuracy on input  5
+Train Accuracy: 0.980 | Loss: 1.482
+Test Accuracy: 0.984 | Loss: 1.478
+
+Evaluating accuracy on input  6
+Train Accuracy: 0.980 | Loss: 1.482
+Test Accuracy: 0.986 | Loss: 1.473
+
+Evaluating accuracy on input  7
+Train Accuracy: 0.980 | Loss: 1.482
+Test Accuracy: 0.423 | Loss: 2.070
+
+Evaluating accuracy on input  8
+Train Accuracy: 0.980 | Loss: 1.482
+Test Accuracy: 0.985 | Loss: 1.476
+
+Evaluating accuracy on input  9
+Train Accuracy: 0.980 | Loss: 1.482
+Test Accuracy: 0.988 | Loss: 1.474
+
+Evaluating accuracy on poisoned input from  1  to  7
+Train Accuracy: 0.980 | Loss: 1.482
+Test Accuracy: 0.003 | Loss: 2.451
+
+----------
+Starting iteration  18
+train_acc=97.93%: 100%
+792/792 [08:17<00:00, 1.59it/s]
+
+train_acc=97.9282%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_50\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_50\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_50\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_50\split_end_model_checkpoint\checkpoint
+
+ Evaluating accuracy on all data
+Train Accuracy: 0.979 | Loss: 1.482
+Test Accuracy: 0.873 | Loss: 1.590
+
+Evaluating accuracy on input  0
+Train Accuracy: 0.979 | Loss: 1.482
+Test Accuracy: 0.874 | Loss: 1.585
+
+Evaluating accuracy on input  1
+Train Accuracy: 0.979 | Loss: 1.482
+Test Accuracy: 0.587 | Loss: 1.883
+
+Evaluating accuracy on input  2
+Train Accuracy: 0.979 | Loss: 1.482
+Test Accuracy: 0.990 | Loss: 1.469
+
+Evaluating accuracy on input  3
+Train Accuracy: 0.979 | Loss: 1.482
+Test Accuracy: 0.986 | Loss: 1.475
+
+Evaluating accuracy on input  4
+Train Accuracy: 0.979 | Loss: 1.482
+Test Accuracy: 0.992 | Loss: 1.470
+
+Evaluating accuracy on input  5
+Train Accuracy: 0.979 | Loss: 1.482
+Test Accuracy: 0.991 | Loss: 1.472
+
+Evaluating accuracy on input  6
+Train Accuracy: 0.979 | Loss: 1.482
+Test Accuracy: 0.989 | Loss: 1.472
+
+Evaluating accuracy on input  7
+Train Accuracy: 0.979 | Loss: 1.482
+Test Accuracy: 0.432 | Loss: 2.058
+
+Evaluating accuracy on input  8
+Train Accuracy: 0.979 | Loss: 1.482
+Test Accuracy: 0.979 | Loss: 1.479
+
+Evaluating accuracy on input  9
+Train Accuracy: 0.979 | Loss: 1.482
+Test Accuracy: 0.980 | Loss: 1.481
+
+Evaluating accuracy on poisoned input from  1  to  7
+Train Accuracy: 0.979 | Loss: 1.482
+Test Accuracy: 0.002 | Loss: 2.449
+
+----------
+Starting iteration  19
+train_acc=98.06%: 100%
+792/792 [08:45<00:00, 1.51it/s]
+
+train_acc=98.0564%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_51\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_51\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_51\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_51\split_end_model_checkpoint\checkpoint
+
+ Evaluating accuracy on all data
+Train Accuracy: 0.981 | Loss: 1.481
+Test Accuracy: 0.845 | Loss: 1.619
+
+Evaluating accuracy on input  0
+Train Accuracy: 0.981 | Loss: 1.481
+Test Accuracy: 0.797 | Loss: 1.664
+
+Evaluating accuracy on input  1
+Train Accuracy: 0.981 | Loss: 1.481
+Test Accuracy: 0.428 | Loss: 2.026
+
+Evaluating accuracy on input  2
+Train Accuracy: 0.981 | Loss: 1.481
+Test Accuracy: 0.989 | Loss: 1.469
+
+Evaluating accuracy on input  3
+Train Accuracy: 0.981 | Loss: 1.481
+Test Accuracy: 0.983 | Loss: 1.478
+
+Evaluating accuracy on input  4
+Train Accuracy: 0.981 | Loss: 1.481
+Test Accuracy: 0.990 | Loss: 1.471
+
+Evaluating accuracy on input  5
+Train Accuracy: 0.981 | Loss: 1.481
+Test Accuracy: 0.990 | Loss: 1.474
+
+Evaluating accuracy on input  6
+Train Accuracy: 0.981 | Loss: 1.481
+Test Accuracy: 0.989 | Loss: 1.472
+
+Evaluating accuracy on input  7
+Train Accuracy: 0.981 | Loss: 1.481
+Test Accuracy: 0.396 | Loss: 2.092
+
+Evaluating accuracy on input  8
+Train Accuracy: 0.981 | Loss: 1.481
+Test Accuracy: 0.990 | Loss: 1.472
+
+Evaluating accuracy on input  9
+Train Accuracy: 0.981 | Loss: 1.481
+Test Accuracy: 0.982 | Loss: 1.479
+
+Evaluating accuracy on poisoned input from  1  to  7
+Train Accuracy: 0.981 | Loss: 1.481
+Test Accuracy: 0.001 | Loss: 2.449
+
+----------
+Starting iteration  20
+train_acc=98.03%: 100%
+792/792 [16:50<00:00, 1.28s/it]
+
+train_acc=98.0265%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_52\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_52\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_52\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_52\split_end_model_checkpoint\checkpoint
+
+ Evaluating accuracy on all data
+Train Accuracy: 0.980 | Loss: 1.481
+Test Accuracy: 0.840 | Loss: 1.622
+
+Evaluating accuracy on input  0
+Train Accuracy: 0.980 | Loss: 1.481
+Test Accuracy: 0.824 | Loss: 1.640
+
+Evaluating accuracy on input  1
+Train Accuracy: 0.980 | Loss: 1.481
+Test Accuracy: 0.382 | Loss: 2.074
+
+Evaluating accuracy on input  2
+Train Accuracy: 0.980 | Loss: 1.481
+Test Accuracy: 0.990 | Loss: 1.469
+
+Evaluating accuracy on input  3
+Train Accuracy: 0.980 | Loss: 1.481
+Test Accuracy: 0.994 | Loss: 1.468
+
+Evaluating accuracy on input  4
+Train Accuracy: 0.980 | Loss: 1.481
+Test Accuracy: 0.989 | Loss: 1.471
+
+Evaluating accuracy on input  5
+Train Accuracy: 0.980 | Loss: 1.481
+Test Accuracy: 0.990 | Loss: 1.473
+
+Evaluating accuracy on input  6
+Train Accuracy: 0.980 | Loss: 1.481
+Test Accuracy: 0.989 | Loss: 1.472
+
+Evaluating accuracy on input  7
+Train Accuracy: 0.980 | Loss: 1.481
+Test Accuracy: 0.372 | Loss: 2.111
+
+Evaluating accuracy on input  8
+Train Accuracy: 0.980 | Loss: 1.481
+Test Accuracy: 0.988 | Loss: 1.473
+
+Evaluating accuracy on input  9
+Train Accuracy: 0.980 | Loss: 1.481
+Test Accuracy: 0.979 | Loss: 1.481
+
+Evaluating accuracy on poisoned input from  1  to  7
+Train Accuracy: 0.980 | Loss: 1.481
+Test Accuracy: 0.002 | Loss: 2.448
+
+----------
+Starting iteration  21
+train_acc=98.18%: 100%
+792/792 [08:03<00:00, 1.64it/s]
+
+train_acc=98.1805%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_53\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_53\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_53\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_53\split_end_model_checkpoint\checkpoint
+
+ Evaluating accuracy on all data
+Train Accuracy: 0.982 | Loss: 1.480
+Test Accuracy: 0.820 | Loss: 1.640
+
+Evaluating accuracy on input  0
+Train Accuracy: 0.982 | Loss: 1.480
+Test Accuracy: 0.790 | Loss: 1.669
+
+Evaluating accuracy on input  1
+Train Accuracy: 0.982 | Loss: 1.480
+Test Accuracy: 0.264 | Loss: 2.168
+
+Evaluating accuracy on input  2
+Train Accuracy: 0.982 | Loss: 1.480
+Test Accuracy: 0.990 | Loss: 1.469
+
+Evaluating accuracy on input  3
+Train Accuracy: 0.982 | Loss: 1.480
+Test Accuracy: 0.992 | Loss: 1.469
+
+Evaluating accuracy on input  4
+Train Accuracy: 0.982 | Loss: 1.480
+Test Accuracy: 0.989 | Loss: 1.473
+
+Evaluating accuracy on input  5
+Train Accuracy: 0.982 | Loss: 1.480
+Test Accuracy: 0.988 | Loss: 1.475
+
+Evaluating accuracy on input  6
+Train Accuracy: 0.982 | Loss: 1.480
+Test Accuracy: 0.987 | Loss: 1.473
+
+Evaluating accuracy on input  7
+Train Accuracy: 0.982 | Loss: 1.480
+Test Accuracy: 0.339 | Loss: 2.160
+
+Evaluating accuracy on input  8
+Train Accuracy: 0.982 | Loss: 1.480
+Test Accuracy: 0.988 | Loss: 1.473
+
+Evaluating accuracy on input  9
+Train Accuracy: 0.982 | Loss: 1.480
+Test Accuracy: 0.987 | Loss: 1.474
+
+Evaluating accuracy on poisoned input from  1  to  7
+Train Accuracy: 0.982 | Loss: 1.480
+Test Accuracy: 0.001 | Loss: 2.450
+
+----------
+Starting iteration  22
+train_acc=98.12%: 100%
+792/792 [15:38<00:00, 1.19s/it]
+
+train_acc=98.1249%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_54\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_54\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_54\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_54\split_end_model_checkpoint\checkpoint
+
+ Evaluating accuracy on all data
+Train Accuracy: 0.981 | Loss: 1.480
+Test Accuracy: 0.820 | Loss: 1.640
+
+Evaluating accuracy on input  0
+Train Accuracy: 0.981 | Loss: 1.480
+Test Accuracy: 0.702 | Loss: 1.751
+
+Evaluating accuracy on input  1
+Train Accuracy: 0.981 | Loss: 1.480
+Test Accuracy: 0.396 | Loss: 2.055
+
+Evaluating accuracy on input  2
+Train Accuracy: 0.981 | Loss: 1.480
+Test Accuracy: 0.993 | Loss: 1.467
+
+Evaluating accuracy on input  3
+Train Accuracy: 0.981 | Loss: 1.480
+Test Accuracy: 0.983 | Loss: 1.475
+
+Evaluating accuracy on input  4
+Train Accuracy: 0.981 | Loss: 1.480
+Test Accuracy: 0.991 | Loss: 1.471
+
+Evaluating accuracy on input  5
+Train Accuracy: 0.981 | Loss: 1.480
+Test Accuracy: 0.990 | Loss: 1.474
+
+Evaluating accuracy on input  6
+Train Accuracy: 0.981 | Loss: 1.480
+Test Accuracy: 0.990 | Loss: 1.471
+
+Evaluating accuracy on input  7
+Train Accuracy: 0.981 | Loss: 1.480
+Test Accuracy: 0.281 | Loss: 2.211
+
+Evaluating accuracy on input  8
+Train Accuracy: 0.981 | Loss: 1.480
+Test Accuracy: 0.988 | Loss: 1.473
+
+Evaluating accuracy on input  9
+Train Accuracy: 0.981 | Loss: 1.480
+Test Accuracy: 0.983 | Loss: 1.477
+
+Evaluating accuracy on poisoned input from  1  to  7
+Train Accuracy: 0.981 | Loss: 1.480
+Test Accuracy: 0.001 | Loss: 2.448
+
+----------
+Starting iteration  23
+train_acc=98.15%: 100%
+792/792 [07:43<00:00, 1.71it/s]
+
+train_acc=98.1505%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_55\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_55\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_55\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_55\split_end_model_checkpoint\checkpoint
+
+ Evaluating accuracy on all data
+Train Accuracy: 0.982 | Loss: 1.480
+Test Accuracy: 0.798 | Loss: 1.662
+
+Evaluating accuracy on input  0
+Train Accuracy: 0.982 | Loss: 1.480
+Test Accuracy: 0.610 | Loss: 1.850
+
+Evaluating accuracy on input  1
+Train Accuracy: 0.982 | Loss: 1.480
+Test Accuracy: 0.242 | Loss: 2.193
+
+Evaluating accuracy on input  2
+Train Accuracy: 0.982 | Loss: 1.480
+Test Accuracy: 0.993 | Loss: 1.467
+
+Evaluating accuracy on input  3
+Train Accuracy: 0.982 | Loss: 1.480
+Test Accuracy: 0.987 | Loss: 1.473
+
+Evaluating accuracy on input  4
+Train Accuracy: 0.982 | Loss: 1.480
+Test Accuracy: 0.982 | Loss: 1.478
+
+Evaluating accuracy on input  5
+Train Accuracy: 0.982 | Loss: 1.480
+Test Accuracy: 0.994 | Loss: 1.467
+
+Evaluating accuracy on input  6
+Train Accuracy: 0.982 | Loss: 1.480
+Test Accuracy: 0.987 | Loss: 1.472
+
+Evaluating accuracy on input  7
+Train Accuracy: 0.982 | Loss: 1.480
+Test Accuracy: 0.328 | Loss: 2.157
+
+Evaluating accuracy on input  8
+Train Accuracy: 0.982 | Loss: 1.480
+Test Accuracy: 0.983 | Loss: 1.479
+
+Evaluating accuracy on input  9
+Train Accuracy: 0.982 | Loss: 1.480
+Test Accuracy: 0.981 | Loss: 1.479
+
+Evaluating accuracy on poisoned input from  1  to  7
+Train Accuracy: 0.982 | Loss: 1.480
+Test Accuracy: 0.002 | Loss: 2.445
+
+----------
+Starting iteration  24
+train_acc=98.10%: 100%
+792/792 [08:54<00:00, 1.48it/s]
+
+train_acc=98.0992%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_56\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_56\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_56\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_56\split_end_model_checkpoint\checkpoint
+
+ Evaluating accuracy on all data
+Train Accuracy: 0.981 | Loss: 1.481
+Test Accuracy: 0.820 | Loss: 1.644
+
+Evaluating accuracy on input  0
+Train Accuracy: 0.981 | Loss: 1.481
+Test Accuracy: 0.635 | Loss: 1.832
+
+Evaluating accuracy on input  1
+Train Accuracy: 0.981 | Loss: 1.481
+Test Accuracy: 0.441 | Loss: 2.028
+
+Evaluating accuracy on input  2
+Train Accuracy: 0.981 | Loss: 1.481
+Test Accuracy: 0.997 | Loss: 1.465
+
+Evaluating accuracy on input  3
+Train Accuracy: 0.981 | Loss: 1.481
+Test Accuracy: 0.988 | Loss: 1.473
+
+Evaluating accuracy on input  4
+Train Accuracy: 0.981 | Loss: 1.481
+Test Accuracy: 0.987 | Loss: 1.474
+
+Evaluating accuracy on input  5
+Train Accuracy: 0.981 | Loss: 1.481
+Test Accuracy: 0.987 | Loss: 1.477
+
+Evaluating accuracy on input  6
+Train Accuracy: 0.981 | Loss: 1.481
+Test Accuracy: 0.992 | Loss: 1.469
+
+Evaluating accuracy on input  7
+Train Accuracy: 0.981 | Loss: 1.481
+Test Accuracy: 0.283 | Loss: 2.205
+
+Evaluating accuracy on input  8
+Train Accuracy: 0.981 | Loss: 1.481
+Test Accuracy: 0.988 | Loss: 1.473
+
+Evaluating accuracy on input  9
+Train Accuracy: 0.981 | Loss: 1.481
+Test Accuracy: 0.989 | Loss: 1.473
+
+Evaluating accuracy on poisoned input from  1  to  7
+Train Accuracy: 0.981 | Loss: 1.481
+Test Accuracy: 0.001 | Loss: 2.447
+
+----------
+Starting iteration  25
+train_acc=98.27%: 100%
+792/792 [07:35<00:00, 1.74it/s]
+
+train_acc=98.2745%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_57\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_57\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_57\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_57\split_end_model_checkpoint\checkpoint
+
+ Evaluating accuracy on all data
+Train Accuracy: 0.983 | Loss: 1.479
+Test Accuracy: 0.814 | Loss: 1.646
+
+Evaluating accuracy on input  0
+Train Accuracy: 0.983 | Loss: 1.479
+Test Accuracy: 0.729 | Loss: 1.729
+
+Evaluating accuracy on input  1
+Train Accuracy: 0.983 | Loss: 1.479
+Test Accuracy: 0.295 | Loss: 2.160
+
+Evaluating accuracy on input  2
+Train Accuracy: 0.983 | Loss: 1.479
+Test Accuracy: 0.989 | Loss: 1.468
+
+Evaluating accuracy on input  3
+Train Accuracy: 0.983 | Loss: 1.479
+Test Accuracy: 0.993 | Loss: 1.468
+
+Evaluating accuracy on input  4
+Train Accuracy: 0.983 | Loss: 1.479
+Test Accuracy: 0.988 | Loss: 1.473
+
+Evaluating accuracy on input  5
+Train Accuracy: 0.983 | Loss: 1.479
+Test Accuracy: 0.987 | Loss: 1.475
+
+Evaluating accuracy on input  6
+Train Accuracy: 0.983 | Loss: 1.479
+Test Accuracy: 0.986 | Loss: 1.473
+
+Evaluating accuracy on input  7
+Train Accuracy: 0.983 | Loss: 1.479
+Test Accuracy: 0.309 | Loss: 2.211
+
+Evaluating accuracy on input  8
+Train Accuracy: 0.983 | Loss: 1.479
+Test Accuracy: 0.987 | Loss: 1.474
+
+Evaluating accuracy on input  9
+Train Accuracy: 0.983 | Loss: 1.479
+Test Accuracy: 0.988 | Loss: 1.473
+
+Evaluating accuracy on poisoned input from  1  to  7
+Train Accuracy: 0.983 | Loss: 1.479
+Test Accuracy: 0.001 | Loss: 2.447
+
+----------
+Starting iteration  26
+train_acc=98.31%: 100%
+792/792 [08:12<00:00, 1.61it/s]
+
+train_acc=98.3087%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_58\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_58\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_58\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_58\split_end_model_checkpoint\checkpoint
+
+ Evaluating accuracy on all data
+Train Accuracy: 0.983 | Loss: 1.478
+Test Accuracy: 0.823 | Loss: 1.641
+
+Evaluating accuracy on input  0
+Train Accuracy: 0.983 | Loss: 1.478
+Test Accuracy: 0.712 | Loss: 1.751
+
+Evaluating accuracy on input  1
+Train Accuracy: 0.983 | Loss: 1.478
+Test Accuracy: 0.430 | Loss: 2.046
+
+Evaluating accuracy on input  2
+Train Accuracy: 0.983 | Loss: 1.478
+Test Accuracy: 0.995 | Loss: 1.465
+
+Evaluating accuracy on input  3
+Train Accuracy: 0.983 | Loss: 1.478
+Test Accuracy: 0.991 | Loss: 1.470
+
+Evaluating accuracy on input  4
+Train Accuracy: 0.983 | Loss: 1.478
+Test Accuracy: 0.987 | Loss: 1.475
+
+Evaluating accuracy on input  5
+Train Accuracy: 0.983 | Loss: 1.478
+Test Accuracy: 0.989 | Loss: 1.474
+
+Evaluating accuracy on input  6
+Train Accuracy: 0.983 | Loss: 1.478
+Test Accuracy: 0.990 | Loss: 1.472
+
+Evaluating accuracy on input  7
+Train Accuracy: 0.983 | Loss: 1.478
+Test Accuracy: 0.248 | Loss: 2.256
+
+Evaluating accuracy on input  8
+Train Accuracy: 0.983 | Loss: 1.478
+Test Accuracy: 0.988 | Loss: 1.474
+
+Evaluating accuracy on input  9
+Train Accuracy: 0.983 | Loss: 1.478
+Test Accuracy: 0.989 | Loss: 1.472
+
+Evaluating accuracy on poisoned input from  1  to  7
+Train Accuracy: 0.983 | Loss: 1.478
+Test Accuracy: 0.001 | Loss: 2.448
+
+----------
+Starting iteration  27
+train_acc=98.35%: 100%
+792/792 [16:18<00:00, 1.24s/it]
+
+train_acc=98.3536%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_59\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_59\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_59\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_59\split_end_model_checkpoint\checkpoint
+
+ Evaluating accuracy on all data
+Train Accuracy: 0.984 | Loss: 1.478
+Test Accuracy: 0.818 | Loss: 1.644
+
+Evaluating accuracy on input  0
+Train Accuracy: 0.984 | Loss: 1.478
+Test Accuracy: 0.703 | Loss: 1.757
+
+Evaluating accuracy on input  1
+Train Accuracy: 0.984 | Loss: 1.478
+Test Accuracy: 0.410 | Loss: 2.055
+
+Evaluating accuracy on input  2
+Train Accuracy: 0.984 | Loss: 1.478
+Test Accuracy: 0.997 | Loss: 1.464
+
+Evaluating accuracy on input  3
+Train Accuracy: 0.984 | Loss: 1.478
+Test Accuracy: 0.991 | Loss: 1.470
+
+Evaluating accuracy on input  4
+Train Accuracy: 0.984 | Loss: 1.478
+Test Accuracy: 0.986 | Loss: 1.476
+
+Evaluating accuracy on input  5
+Train Accuracy: 0.984 | Loss: 1.478
+Test Accuracy: 0.988 | Loss: 1.474
+
+Evaluating accuracy on input  6
+Train Accuracy: 0.984 | Loss: 1.478
+Test Accuracy: 0.983 | Loss: 1.475
+
+Evaluating accuracy on input  7
+Train Accuracy: 0.984 | Loss: 1.478
+Test Accuracy: 0.242 | Loss: 2.257
+
+Evaluating accuracy on input  8
+Train Accuracy: 0.984 | Loss: 1.478
+Test Accuracy: 0.987 | Loss: 1.475
+
+Evaluating accuracy on input  9
+Train Accuracy: 0.984 | Loss: 1.478
+Test Accuracy: 0.990 | Loss: 1.471
+
+Evaluating accuracy on poisoned input from  1  to  7
+Train Accuracy: 0.984 | Loss: 1.478
+Test Accuracy: 0.001 | Loss: 2.449
+
+----------
+Starting iteration  28
+train_acc=98.34%: 100%
+792/792 [07:37<00:00, 1.73it/s]
+
+train_acc=98.3365%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_60\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_60\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_60\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_60\split_end_model_checkpoint\checkpoint
+
+ Evaluating accuracy on all data
+Train Accuracy: 0.983 | Loss: 1.478
+Test Accuracy: 0.824 | Loss: 1.638
+
+Evaluating accuracy on input  0
+Train Accuracy: 0.983 | Loss: 1.478
+Test Accuracy: 0.783 | Loss: 1.674
+
+Evaluating accuracy on input  1
+Train Accuracy: 0.983 | Loss: 1.478
+Test Accuracy: 0.336 | Loss: 2.139
+
+Evaluating accuracy on input  2
+Train Accuracy: 0.983 | Loss: 1.478
+Test Accuracy: 0.988 | Loss: 1.471
+
+Evaluating accuracy on input  3
+Train Accuracy: 0.983 | Loss: 1.478
+Test Accuracy: 0.992 | Loss: 1.469
+
+Evaluating accuracy on input  4
+Train Accuracy: 0.983 | Loss: 1.478
+Test Accuracy: 0.991 | Loss: 1.470
+
+Evaluating accuracy on input  5
+Train Accuracy: 0.983 | Loss: 1.478
+Test Accuracy: 0.988 | Loss: 1.475
+
+Evaluating accuracy on input  6
+Train Accuracy: 0.983 | Loss: 1.478
+Test Accuracy: 0.986 | Loss: 1.473
+
+Evaluating accuracy on input  7
+Train Accuracy: 0.983 | Loss: 1.478
+Test Accuracy: 0.303 | Loss: 2.214
+
+Evaluating accuracy on input  8
+Train Accuracy: 0.983 | Loss: 1.478
+Test Accuracy: 0.990 | Loss: 1.470
+
+Evaluating accuracy on input  9
+Train Accuracy: 0.983 | Loss: 1.478
+Test Accuracy: 0.987 | Loss: 1.475
+
+Evaluating accuracy on poisoned input from  1  to  7
+Train Accuracy: 0.983 | Loss: 1.478
+Test Accuracy: 0.001 | Loss: 2.449
+
+----------
