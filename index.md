@@ -21,11 +21,12 @@ to undetectable data retrieval and model poisoning attacks during training. A re
 Learning claims to provide a secure way of collaboratively training deep learning models. The vulnerabilities of this
 method have not been fully investigated, however. In this work, we first present vulnerabilities of Federated Learning 
 involving raw data retrieval and input data poisoning [[1-2]](#1), focussing on 
-label flipping attacks [[3-5]](#3) and backdoor attacks [[6-7]](#6). 
-Secondly, we introduce Split Learning [[8-15]](#8) and investigate its susceptibility to label flipping and backdoor attacks. 
-==Lastly, we present methods to prevent or mitigate attacks on Split Learning inspired from previous mitigation methods [[16-17]](#16).==
+label poisoning attacks [[3-5]](#3) and backdoor attacks [[6-7]](#6). 
+Secondly, introduce Split Learning [[8-15]](#8) and investigate its susceptibility to label poisoning and backdoor attacks. Finally, we introduce an attack pipeline consiting of a Generative Adversarial Network (GAN) and apply black-box attack techniques to the pipeline to improve upon the attack's success.
 
 ## I. Introduction
+
+<!-- TODO: give an overarching view of Split Learning, and some examples for what ways Split Learning is secure. Mention Federated Learning and draw connections between FL and SL. -->
 
 ## II. Background
 
@@ -147,7 +148,11 @@ No previous work has shown the vulnerabilities of Split Learning. We extend pres
 
 <!-- TODO: add Black-box attack papers -->
 
-## IX. Conclusion
+## IX. Futer Work
+
+<!-- ==Lastly, we present methods to prevent or mitigate attacks on Split Learning inspired from previous mitigation methods [[16-17]](#16).== -->
+
+<!-- ## X. Conclusion -->
 
 ## X. Citations
 
@@ -162,7 +167,7 @@ No previous work has shown the vulnerabilities of Split Learning. We extend pres
     </li>
 </ol>
 
-##### Label Flipping Attacks
+##### Label Poisoning Attacks
 
 <ol start="3">
     <li id="3">
