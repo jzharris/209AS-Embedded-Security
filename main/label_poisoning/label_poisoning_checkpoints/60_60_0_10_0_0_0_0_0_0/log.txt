@@ -1,0 +1,129 @@
+--------------
+Trained for 25 epoch(s).
+Training the model...
+
+..........
+Epoch 1:
+Train Accuracy: 0.461 | Loss: 1.333
+Test Accuracy: 76.950% | Test Accuracy Poisoned 2.710%
+
+..........
+Epoch 2:
+Train Accuracy: 0.634 | Loss: 0.755
+Test Accuracy: 85.190% | Test Accuracy Poisoned 2.380%
+
+..........
+Epoch 3:
+Train Accuracy: 0.697 | Loss: 0.639
+Test Accuracy: 86.070% | Test Accuracy Poisoned 5.480%
+
+..........
+Epoch 4:
+Train Accuracy: 0.729 | Loss: 0.486
+Test Accuracy: 89.230% | Test Accuracy Poisoned 4.990%
+
+..........
+Epoch 5:
+Train Accuracy: 0.751 | Loss: 0.453
+Test Accuracy: 89.670% | Test Accuracy Poisoned 5.550%
+
+..........
+Epoch 6:
+Train Accuracy: 0.766 | Loss: 0.425
+Test Accuracy: 91.100% | Test Accuracy Poisoned 4.740%
+
+..........
+Epoch 7:
+Train Accuracy: 0.777 | Loss: 0.392
+Test Accuracy: 91.710% | Test Accuracy Poisoned 4.070%
+
+..........
+Epoch 8:
+Train Accuracy: 0.786 | Loss: 0.362
+Test Accuracy: 94.660% | Test Accuracy Poisoned 1.090%
+
+..........
+Epoch 9:
+Train Accuracy: 0.794 | Loss: 0.379
+Test Accuracy: 92.240% | Test Accuracy Poisoned 4.150%
+
+..........
+Epoch 10:
+Train Accuracy: 0.801 | Loss: 0.347
+Test Accuracy: 93.070% | Test Accuracy Poisoned 3.290%
+
+..........
+Epoch 11:
+Train Accuracy: 0.807 | Loss: 0.345
+Test Accuracy: 93.420% | Test Accuracy Poisoned 2.800%
+
+..........
+Epoch 12:
+Train Accuracy: 0.812 | Loss: 0.330
+Test Accuracy: 94.260% | Test Accuracy Poisoned 2.230%
+
+..........
+Epoch 13:
+Train Accuracy: 0.815 | Loss: 0.333
+Test Accuracy: 94.070% | Test Accuracy Poisoned 2.970%
+
+..........
+Epoch 14:
+Train Accuracy: 0.817 | Loss: 0.313
+Test Accuracy: 94.650% | Test Accuracy Poisoned 2.460%
+
+..........
+Epoch 15:
+Train Accuracy: 0.819 | Loss: 0.303
+Test Accuracy: 91.600% | Test Accuracy Poisoned 5.750%
+
+..........
+Epoch 16:
+Train Accuracy: 0.821 | Loss: 0.294
+Test Accuracy: 89.230% | Test Accuracy Poisoned 7.970%
+
+..........
+Epoch 17:
+Train Accuracy: 0.822 | Loss: 0.284
+Test Accuracy: 96.130% | Test Accuracy Poisoned 1.160%
+
+..........
+Epoch 18:
+Train Accuracy: 0.823 | Loss: 0.288
+Test Accuracy: 96.180% | Test Accuracy Poisoned 1.600%
+
+..........
+Epoch 19:
+Train Accuracy: 0.823 | Loss: 0.278
+Test Accuracy: 96.170% | Test Accuracy Poisoned 1.730%
+
+..........
+Epoch 20:
+Train Accuracy: 0.824 | Loss: 0.295
+Test Accuracy: 97.070% | Test Accuracy Poisoned 0.610%
+
+..........
+Epoch 21:
+Train Accuracy: 0.825 | Loss: 0.276
+Test Accuracy: 95.180% | Test Accuracy Poisoned 2.610%
+
+..........
+Epoch 22:
+Train Accuracy: 0.826 | Loss: 0.261
+Test Accuracy: 93.430% | Test Accuracy Poisoned 4.500%
+
+..........
+Epoch 23:
+Train Accuracy: 0.827 | Loss: 0.266
+Test Accuracy: 88.630% | Test Accuracy Poisoned 9.380%
+
+..........
+Epoch 24:
+Train Accuracy: 0.828 | Loss: 0.259
+Test Accuracy: 90.020% | Test Accuracy Poisoned 8.050%
+
+..........
+Epoch 25:
+Train Accuracy: 0.828 | Loss: 0.257
+Test Accuracy: 95.020% | Test Accuracy Poisoned 3.140%
+

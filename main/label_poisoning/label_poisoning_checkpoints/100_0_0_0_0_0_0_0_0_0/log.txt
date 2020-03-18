@@ -1,0 +1,4 @@
+--------------
+Trained for 25 epoch(s).
+Train Accuracy: 0.969 | Loss: 0.024
+Test Accuracy: 88.930% | Test Accuracy Poisoned 9.840%

@@ -1,0 +1,501 @@
+Test:
+
+95% compromised clients of one class
+Repeatedly trained on  exiting batch, but also on same single generated set of examples with mislabeled labels
+
+----------
+Starting iteration  0
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=92.7354%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_32\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_32\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_32\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_32\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.927 | Loss: 1.534
+Test Accuracy: 0.975 | Loss: 1.486
+
+----------
+Starting iteration  1
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=95.9695%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_33\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_33\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_33\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_33\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.960 | Loss: 1.502
+Test Accuracy: 0.975 | Loss: 1.486
+
+----------
+Starting iteration  2
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=96.0728%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_34\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_34\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_34\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_34\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.961 | Loss: 1.501
+Test Accuracy: 0.977 | Loss: 1.483
+
+----------
+Starting iteration  3
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=96.3460%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_35\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_35\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_35\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_35\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.963 | Loss: 1.498
+Test Accuracy: 0.977 | Loss: 1.484
+
+----------
+Starting iteration  4
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=96.4077%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_36\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_36\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_36\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_36\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.964 | Loss: 1.497
+Test Accuracy: 0.979 | Loss: 1.482
+
+----------
+Starting iteration  5
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=96.6876%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_37\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_37\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_37\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_37\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.967 | Loss: 1.495
+Test Accuracy: 0.977 | Loss: 1.483
+
+----------
+Starting iteration  6
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=96.6676%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_38\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_38\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_38\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_38\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.967 | Loss: 1.495
+Test Accuracy: 0.979 | Loss: 1.482
+
+----------
+Starting iteration  7
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=96.7526%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_39\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_39\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_39\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_39\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.968 | Loss: 1.494
+Test Accuracy: 0.980 | Loss: 1.481
+
+----------
+Starting iteration  8
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=96.8909%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_40\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_40\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_40\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_40\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.969 | Loss: 1.493
+Test Accuracy: 0.978 | Loss: 1.482
+
+----------
+Starting iteration  9
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=96.9692%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_41\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_41\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_41\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_41\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.970 | Loss: 1.492
+Test Accuracy: 0.979 | Loss: 1.482
+
+----------
+Starting iteration  10
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=96.9192%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_42\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_42\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_42\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_42\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.969 | Loss: 1.492
+Test Accuracy: 0.977 | Loss: 1.483
+
+----------
+Starting iteration  11
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=97.0908%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_43\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_43\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_43\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_43\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.971 | Loss: 1.490
+Test Accuracy: 0.979 | Loss: 1.481
+
+----------
+Starting iteration  12
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=97.2908%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_44\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_44\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_44\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_44\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.973 | Loss: 1.489
+Test Accuracy: 0.979 | Loss: 1.482
+
+----------
+Starting iteration  13
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=97.3258%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_45\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_45\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_45\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_45\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.973 | Loss: 1.488
+Test Accuracy: 0.980 | Loss: 1.480
+
+----------
+Starting iteration  14
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=97.2741%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_46\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_46\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_46\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_46\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.973 | Loss: 1.488
+Test Accuracy: 0.982 | Loss: 1.479
+
+----------
+Starting iteration  15
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=97.2275%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_47\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_47\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_47\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_47\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.972 | Loss: 1.489
+Test Accuracy: 0.982 | Loss: 1.479
+
+----------
+Starting iteration  16
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=97.4424%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_48\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_48\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_48\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_48\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.974 | Loss: 1.487
+Test Accuracy: 0.982 | Loss: 1.479
+
+----------
+Starting iteration  17
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=97.5057%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_49\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_49\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_49\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_49\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.975 | Loss: 1.487
+Test Accuracy: 0.982 | Loss: 1.479
+
+----------
+Starting iteration  18
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=97.5290%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_50\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_50\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_50\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_50\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.975 | Loss: 1.486
+Test Accuracy: 0.983 | Loss: 1.478
+
+----------
+Starting iteration  19
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=97.5940%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_51\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_51\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_51\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_51\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.976 | Loss: 1.486
+Test Accuracy: 0.983 | Loss: 1.478
+
+----------
+Starting iteration  20
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=97.6440%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_52\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_52\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_52\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_52\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.976 | Loss: 1.485
+Test Accuracy: 0.983 | Loss: 1.478
+
+----------
+Starting iteration  21
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=97.6173%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_53\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_53\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_53\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_53\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.976 | Loss: 1.485
+Test Accuracy: 0.984 | Loss: 1.476
+
+----------
+Starting iteration  22
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=97.6307%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_54\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_54\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_54\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_54\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.976 | Loss: 1.485
+Test Accuracy: 0.984 | Loss: 1.477
+
+----------
+Starting iteration  23
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=97.5390%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_55\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_55\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_55\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_55\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.975 | Loss: 1.486
+Test Accuracy: 0.984 | Loss: 1.477
+
+----------
+Starting iteration  24
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=97.8806%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_56\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_56\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_56\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_56\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.979 | Loss: 1.483
+Test Accuracy: 0.984 | Loss: 1.476
+
+----------
+Starting iteration  25
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=97.7656%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_57\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_57\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_57\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_57\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.978 | Loss: 1.483
+Test Accuracy: 0.984 | Loss: 1.476
+
+----------
+Starting iteration  26
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=97.9389%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_58\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_58\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_58\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_58\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.979 | Loss: 1.482
+Test Accuracy: 0.983 | Loss: 1.477
+
+----------
+Starting iteration  27
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=97.8973%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_59\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_59\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_59\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_59\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.979 | Loss: 1.482
+Test Accuracy: 0.984 | Loss: 1.477
+
+----------
+Starting iteration  28
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=98.0239%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_60\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_60\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_60\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_60\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.980 | Loss: 1.481
+Test Accuracy: 0.984 | Loss: 1.476
+
+----------
+Starting iteration  29
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=97.9572%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_61\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_61\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_61\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_61\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.980 | Loss: 1.482
+Test Accuracy: 0.983 | Loss: 1.477
+
+----------
+Starting iteration  30
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=98.0172%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_62\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_62\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_62\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_62\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.980 | Loss: 1.481
+Test Accuracy: 0.984 | Loss: 1.477
+
+----------
+Starting iteration  31
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=98.0489%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_63\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_63\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_63\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_63\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.980 | Loss: 1.481
+Test Accuracy: 0.984 | Loss: 1.477
+
+----------
+Starting iteration  32
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=98.0156%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_64\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_64\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_64\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_64\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.980 | Loss: 1.481
+Test Accuracy: 0.985 | Loss: 1.476
+
+----------
+Starting iteration  33
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=98.1855%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_65\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_65\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_65\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_65\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.982 | Loss: 1.480
+Test Accuracy: 0.986 | Loss: 1.475
+
+----------
+Starting iteration  34
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=98.1272%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_66\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_66\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_66\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_66\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.981 | Loss: 1.480
+Test Accuracy: 0.985 | Loss: 1.475
+
+----------
+Starting iteration  35
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=98.1089%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_67\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_67\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_67\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_67\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.981 | Loss: 1.480
+Test Accuracy: 0.986 | Loss: 1.475
+
+----------
+Starting iteration  36
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=98.1605%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_68\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_68\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_68\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_68\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.982 | Loss: 1.480
+Test Accuracy: 0.986 | Loss: 1.475
+
+----------
+Starting iteration  37
+A Jupyter widget could not be displayed because the widget state could not be found. This could happen if the kernel storing the widget is no longer available, or if the widget state was not saved in the notebook. You may be able to create the widget by running the appropriate cells.
+
+train_acc=98.3088%
+accuracy of blackbox on G dataset: 0.0000%
+Saved checkpoint: checkpoints\it_69\blackbox_checkpoint\ckpt-1
+Saved checkpoint: checkpoints\it_69\split_start_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_69\split_middle_model_checkpoint\checkpoint
+Saved checkpoint: checkpoints\it_69\split_end_model_checkpoint\checkpoint
+Train Accuracy: 0.983 | Loss: 1.478
+Test Accuracy: 0.987 | Loss: 1.474
+
+----------
+Starting iteration  38

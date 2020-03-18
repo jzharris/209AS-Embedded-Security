@@ -1,0 +1,210 @@
+--------------
+Trained for 25 epoch(s).
+Train Accuracy: 0.904 | Loss: 0.118
+Test Accuracy: 98.350% | Test Accuracy Poisoned 0.270%
+
+
+
+Training the model...
+
+..........
+Epoch 1:
+train_acc=0.480 | train_loss=1.151: 100%
+60000/60000 [38:30<00:00, 25.96it/s]
+
+Train Accuracy: 0.480 | Loss: 1.151
+Test Accuracy: 83.080% | Test Accuracy Poisoned 1.820%
+
+..........
+Epoch 2:
+train_acc=0.708 | train_loss=0.485: 100%
+60000/60000 [37:09<00:00, 26.91it/s]
+
+Train Accuracy: 0.708 | Loss: 0.485
+Test Accuracy: 90.820% | Test Accuracy Poisoned 1.110%
+
+..........
+Epoch 3:
+train_acc=0.776 | train_loss=0.369: 100%
+60000/60000 [04:31<00:00, 221.11it/s]
+
+Train Accuracy: 0.776 | Loss: 0.369
+Test Accuracy: 93.770% | Test Accuracy Poisoned 0.830%
+
+..........
+Epoch 4:
+train_acc=0.810 | train_loss=0.303: 100%
+60000/60000 [03:04<00:00, 325.97it/s]
+
+Train Accuracy: 0.810 | Loss: 0.303
+Test Accuracy: 94.600% | Test Accuracy Poisoned 0.860%
+
+..........
+Epoch 5:
+train_acc=0.832 | train_loss=0.242: 100%
+60000/60000 [32:47<00:00, 30.50it/s]
+
+Train Accuracy: 0.832 | Loss: 0.242
+Test Accuracy: 95.800% | Test Accuracy Poisoned 0.720%
+
+..........
+Epoch 6:
+train_acc=0.847 | train_loss=0.233: 100%
+60000/60000 [31:15<00:00, 32.00it/s]
+
+Train Accuracy: 0.847 | Loss: 0.233
+Test Accuracy: 96.410% | Test Accuracy Poisoned 0.520%
+
+..........
+Epoch 7:
+train_acc=0.857 | train_loss=0.206: 100%
+60000/60000 [04:38<00:00, 215.34it/s]
+
+Train Accuracy: 0.857 | Loss: 0.206
+Test Accuracy: 96.730% | Test Accuracy Poisoned 0.500%
+
+..........
+Epoch 8:
+train_acc=0.865 | train_loss=0.208: 100%
+60000/60000 [03:05<00:00, 322.72it/s]
+
+Train Accuracy: 0.865 | Loss: 0.208
+Test Accuracy: 97.180% | Test Accuracy Poisoned 0.460%
+
+..........
+Epoch 9:
+train_acc=0.871 | train_loss=0.181: 100%
+60000/60000 [26:35<00:00, 37.60it/s]
+
+Train Accuracy: 0.871 | Loss: 0.181
+Test Accuracy: 97.200% | Test Accuracy Poisoned 0.410%
+
+..........
+Epoch 10:
+train_acc=0.876 | train_loss=0.166: 100%
+60000/60000 [25:02<00:00, 39.93it/s]
+
+Train Accuracy: 0.876 | Loss: 0.166
+Test Accuracy: 97.350% | Test Accuracy Poisoned 0.390%
+
+..........
+Epoch 11:
+train_acc=0.880 | train_loss=0.160: 100%
+60000/60000 [04:39<00:00, 214.35it/s]
+
+Train Accuracy: 0.880 | Loss: 0.160
+Test Accuracy: 97.500% | Test Accuracy Poisoned 0.360%
+
+..........
+Epoch 12:
+train_acc=0.884 | train_loss=0.161: 100%
+60000/60000 [03:06<00:00, 321.14it/s]
+
+Train Accuracy: 0.884 | Loss: 0.161
+Test Accuracy: 97.720% | Test Accuracy Poisoned 0.360%
+
+..........
+Epoch 13:
+train_acc=0.886 | train_loss=0.139: 100%
+60000/60000 [20:22<00:00, 49.07it/s]
+
+Train Accuracy: 0.886 | Loss: 0.139
+Test Accuracy: 97.790% | Test Accuracy Poisoned 0.300%
+
+..........
+Epoch 14:
+train_acc=0.890 | train_loss=0.157: 100%
+60000/60000 [18:49<00:00, 53.10it/s]
+
+Train Accuracy: 0.890 | Loss: 0.157
+Test Accuracy: 97.760% | Test Accuracy Poisoned 0.390%
+
+..........
+Epoch 15:
+train_acc=0.892 | train_loss=0.138: 100%
+60000/60000 [04:41<00:00, 213.17it/s]
+
+Train Accuracy: 0.892 | Loss: 0.138
+Test Accuracy: 97.860% | Test Accuracy Poisoned 0.350%
+
+..........
+Epoch 16:
+train_acc=0.893 | train_loss=0.133: 100%
+60000/60000 [03:08<00:00, 319.10it/s]
+
+Train Accuracy: 0.893 | Loss: 0.133
+Test Accuracy: 98.030% | Test Accuracy Poisoned 0.270%
+
+..........
+Epoch 17:
+train_acc=0.895 | train_loss=0.131: 100%
+60000/60000 [14:08<00:00, 70.69it/s]
+
+Train Accuracy: 0.895 | Loss: 0.131
+Test Accuracy: 97.980% | Test Accuracy Poisoned 0.270%
+
+..........
+Epoch 18:
+train_acc=0.896 | train_loss=0.131: 100%
+60000/60000 [12:34<00:00, 79.48it/s]
+
+Train Accuracy: 0.896 | Loss: 0.131
+Test Accuracy: 98.040% | Test Accuracy Poisoned 0.310%
+
+..........
+Epoch 19:
+train_acc=0.897 | train_loss=0.127: 100%
+60000/60000 [04:42<00:00, 212.43it/s]
+
+Train Accuracy: 0.897 | Loss: 0.127
+Test Accuracy: 98.080% | Test Accuracy Poisoned 0.270%
+
+..........
+Epoch 20:
+train_acc=0.899 | train_loss=0.128: 100%
+60000/60000 [03:07<00:00, 319.24it/s]
+
+Train Accuracy: 0.899 | Loss: 0.128
+Test Accuracy: 98.100% | Test Accuracy Poisoned 0.300%
+
+..........
+Epoch 21:
+train_acc=0.900 | train_loss=0.123: 100%
+60000/60000 [07:52<00:00, 127.06it/s]
+
+Train Accuracy: 0.900 | Loss: 0.123
+Test Accuracy: 98.240% | Test Accuracy Poisoned 0.220%
+
+..........
+Epoch 22:
+train_acc=0.901 | train_loss=0.122: 100%
+60000/60000 [06:18<00:00, 158.60it/s]
+
+Train Accuracy: 0.901 | Loss: 0.122
+Test Accuracy: 98.100% | Test Accuracy Poisoned 0.230%
+
+..........
+Epoch 23:
+train_acc=0.902 | train_loss=0.120: 100%
+60000/60000 [04:43<00:00, 211.28it/s]
+
+Train Accuracy: 0.902 | Loss: 0.120
+Test Accuracy: 98.350% | Test Accuracy Poisoned 0.170%
+
+..........
+Epoch 24:
+train_acc=0.903 | train_loss=0.118: 100%
+60000/60000 [03:09<00:00, 316.92it/s]
+
+Train Accuracy: 0.903 | Loss: 0.118
+Test Accuracy: 98.350% | Test Accuracy Poisoned 0.230%
+
+..........
+Epoch 25:
+train_acc=0.904 | train_loss=0.118: 100%
+60000/60000 [01:30<00:00, 660.88it/s]
+
+Train Accuracy: 0.904 | Loss: 0.118
+Test Accuracy: 98.350% | Test Accuracy Poisoned 0.270%
+
+Saved the updated weights
