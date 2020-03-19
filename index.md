@@ -139,6 +139,10 @@ Therefore, optimizing the Discriminator refinement process is congruent to optim
 
 ##### FGSM
 
+
+
+![](report/fgsm_eq.PNG)
+
 ##### advGAN
 
 ## V. Implementation
