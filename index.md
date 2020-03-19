@@ -135,7 +135,7 @@ Before commencing a full-blown GAN poisoning attack, we will first verify that w
 
 To improve the results of the GAN poisoning attack, we will query the black-box model with inputs designed to speed up Discriminator training. The Generator optimizes its output on the Discriminator. The Discriminator refines its output to closer match the black-box. However, the output from the black-box relies on the images provided by the Generator. Because of this recursive connection, the GAN training paradigm as-is presents a "Chicken and Egg" strategy problem. The training of this system converges very slowly because the Discriminator can only refine itself using _negative_ cases (in any other GAN training scheme, the Discriminator can use positive cases during training). 
 
-Therefore, optimizing the Discriminator refinement process is congruent to optimizing the queries sent to the black-box. Black-box attack techniques provide this capability. We selected the two highest-performant techniques from MIT’s MNIST Adversarial Examples Challenge [[18]](#18), namely Fast Gradient Sign Method (FGSM) [21-23](#21) and advGAN [20](#20).
+Therefore, optimizing the Discriminator refinement process is congruent to optimizing the queries sent to the black-box. Black-box attack techniques provide this capability. We selected the two highest-performant techniques from MIT’s MNIST Adversarial Examples Challenge [[18]](#18), namely Fast Gradient Sign Method (FGSM) [[21-23]](#21) and advGAN [[20]](#20).
 
 ##### FGSM
 
@@ -159,7 +159,7 @@ We used the same hardware setup and client distribution to perform our attack as
 
 We decided to copy the structure of the black-box model for the Discriminator after an empirical analysis of the complexity requirements of the Discriminator. When running on the MNIST dataset, the black-box model be successfully approximated by a Disciminator with much less complexity. We found that, after plotting Discriminator accuracy vs black-box during the Discriminator refinement, the Discriminator solely depends on the accuracy of the black-box. We show these results in the following plots of the Discriminator's accuracy and loss when the Discriminator was refined on the black-box using the MNIST training set.
 
-![](report/complexity_analysis.PNG)
+![](report/complexity_analysis_2.PNG)
 
 ## VI. Experiments
 
