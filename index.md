@@ -108,7 +108,7 @@ The attacker will train the GAN while pretending to be a normal client, contribu
 
 As the attacker trains equitably, their GAN will learn features from the other clients’ private datasets. Once the attacker is satisfied with the convergence of their GAN on the '1' class, they will use the images generated from the Generator of the GAN in a label poisoning attack to reduce the accuracy for that class.
 
-In order to accomplish this attack, we implement an 8-step training process. During this process both the Generator and Discriminator are optimized.
+In order to accomplish this attack, we implement an 8-step training process. During this process the system is iteratively optimized by refining the Generator, querying the black-box, and refining the Discriminator.
 
 <!-- Looking back: a potential mitigation is to have a strict schedule for accumulating batches between clients. ALTHOUGH, this could still be thwarted if the attacker had control of multiple clients. -->
 
@@ -157,11 +157,13 @@ We used the same hardware setup and client distribution to perform our attack as
 
 ##### Discriminator complexity analysis
 
-We decided to copy the structure of the black-box model for the Discriminator after an empirical analysis of the complexity requirements of the Discriminator. When running on the MNIST dataset, the black-box model be successfully approximated by a Disciminator with much less complexity. We found that, after plotting Discriminator accuracy vs black-box during the Discriminator refinement, the Discriminator solely depends on the accuracy of the black-box. We show these results in the following plots of the Discriminator's accuracy and loss when the Discriminator was refined on the black-box using the MNIST training set.
+We decided to copy the structure of the black-box model for the Discriminator after an empirical analysis of the complexity requirements of the Discriminator. When running on the MNIST dataset, the black-box model can be successfully approximated by a Disciminator with much less complexity. We found that, after plotting Discriminator accuracy vs black-box during the Discriminator refinement, the Discriminator solely depends on the accuracy of the black-box. We show these results in the following plots of the Discriminator's accuracy and loss when the Discriminator was refined on the black-box using the MNIST training set. These results show that by assuming that by deciding to copy the same structure of the black-box model, we are still over-estimating the Discriminator wrt to the black-box model.
 
 ![](report/complexity_analysis_2.PNG)
 
 ## VI. Experiments
+
+We performed four experiments in turn. The completion the preceding experiment was necessary to perform the one following. We define the success metrics for each experiment in their respective sections.
 
 ### A. Label Poisoning
 
@@ -169,34 +171,35 @@ We decided to copy the structure of the black-box model for the Discriminator af
 
 ### B. GAN System Verification
 
+Once we are certain that the Split Learning model can be poisoned via label flipping, we will verify that the Generator in the GAN can successfully produce images that are indistinguishable to the black-box. To this end, the Discriminator in this experiment will be a clone of the black-box model.
+
 ##### Success metrics
+
+We will use the accuracy of generated images on the black-box model to verify whether the Generator is producing valid results. The output of the Generator can also be compared to ground truth images from each class to measure the quality of the images produced. We do not desire the results to be perfect, but they must indicate that the Generator is functioning correctly.
 
 ### C. GAN Black-box Attack
 
+Once the GAN system has been verified, it can be inserted into the Split Learning pipeline and the 8-step process for commencing an attack can be performed. In this experiment, the Discriminator is a separate model from the black-box, however it has a duplicate layout as the black-box for the reasons mentioned in V.B. We train a GAN using clients from only a single class to approximate the private datasets from all other classes.
+
 ##### Success metrics
+
+We will use the accuracy of generated images on the black-box model to measure the performance of the Generator. We will use the accuracy of the Discriminator on the original test set to measure how close the Discriminator is to the black-box model. We will also qualitively compare generated images of different estimation approaches. By using these three success metrics, we will determine if the GAN system can be used for label poisoning attacks.
 
 ### D. Label Poisoning using GAN Images
 
 ##### Success metrics
-
-<!-- 1. Show that we can approximate the Black-box model
-    - Black-box complexity
-    - Black-box accuracy
-    
-2. Optimize the Black-box model approximation
-    - Approximate Black-box by recognizing gradient patterns during training
-
-3. Adapt GAN label poisoning attack from [[3]](#3) to target Split Learning
-    - Use gradient techniques to improve GAN attack performance
-
-4. Perform backdoor label poisoning attacks [[6-7]](#6)
-5. Evaluate Split Learning attack detection and prevention methods [[16-17]](#16) -->
 
 ## VII. Results
 
 ### A. Label Poisoning
 
 ### B. GAN System Verification
+
+
+
+![](report/exp2_graph.PNG)
+
+![](report/exp2_digits.PNG)
 
 ### C. GAN Black-box Attack
 
