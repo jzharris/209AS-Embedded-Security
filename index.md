@@ -53,11 +53,19 @@ Secondly, introduce Split Learning [[8-15]](#8) and investigate its susceptibili
 
 Investigating data privacy and model poisoning vulnerabilities for systems using the Split Learning paradigm to train a shared model.
 
+We are investigating the data privacy and model poisoning vulnerabilities for systems using the Split Learning paradigm to collaboratively train models. We are mounting a label poisoning attack on a class of the model that is kept private to us. For example, let us assume that a Split Learning model is being trained to predict MNIST digits and an attacker is training the model to increase the accuracy of the model on the '0' class. Let us assume that the attacker seeks to poison the '1' class of the model. We speculate three reasons why it is plausible for an attacker to target a particular class of the model, when they don't know the data behind that class:
+
+1. They have deduced that one of the clients they wish to attack may have the '1' class. In this case, the attacker does not know what data is present in the '1' class, however they wish to reduce the accuracy of the portion of the model that their targetted client is training.
+2. Instead of focussing on a particular client, the attacker is trying to optimize the potency of their attack on the model over all classes. For example, perhaps the attacker realizes that there is an increased potency in their attack when they mislabel images from the '1' class as being from the '7' class, but a decreased potency when they mislabel images from the '8' class as the '7' class. There is therefore a better chance for their attack to work by choosing to poison the '1' class over the '8' class.
+3. The attacker could have chosen this class arbitrarily. They could be trying to negatively impact the accuracy of any of the victim classes while preserving the accuracy of their own class.
+
 ### B. Why it is important
 
-To show that two claims [[9]](#9) made by Split Learning are invalid:
-1. Keeps training data of clients private
-2. Mitigates malicious attacks by making a portion of the shared model off-limits to clients
+Split Learning has made specific claims [[9]](#9) that gives the training pipeline an extra edge in security over other collaborative training methods such as Federated Learning.
+
+Their first claim is that the training data of disjoint clients cannot be accessed by one another, and a client's dataset is garaunteed to be secure regardless of the number of malicious clients present. This claim stems from the fact that the client's dataset never leaves their local system: the only information shared by the client's machine are the activations of the last client-side layer. The client-side layers introduce noise and perform nonlinear operations on the original input data. The information sent to the server is therefore not the client's raw data, but can be thought of as a cipher calculated by the client's private layers. [[TODO]]() The cipher is weak because these client-side layers are shared amongst clients, which means that a maliscious client can recover the private data if they intercepted the victim client's transmission. However, since we are dealing with client-server communication, the transmission can be encrypted using public key encryption [[TODO]](). However, an attacker outside of the Split Learning process would not be able to derive the client's dataset regardless of extra encyption. Split Learning therefore easily mitigates snooping attacks and keeps all of the client's data private.
+
+Their second claim is that malicious client attacks are mitigated since a portion of the shared model is off-limits to all clients. Zhang, Jiale, et al. [[3]](#3) showed that the private datasets of clients can be approximated when all clients have access to the model while it is training. Their work involved using a GAN to implement a label poisoning attack where the GAN's Discriminator model was replaced with the public model. By doing so, the GAN's generator was able to generate a convincing approximation of all classes that the attacker did not have access to. In order to mitigate this vulnerability, Split Learning keeps a portion of the model off-limits to the clients. This way, it is incredibly difficult to mount an attack using a GAN like before, because most of the model is now unkown to the attacker.
 
 ### C. How it is done today
 
@@ -86,6 +94,8 @@ No previous work has shown the vulnerabilities of Split Learning. We extend pres
 ### A. Label Poisoning Attack
 
 ### B. GAN Poisoning Attack
+
+In order to perform a label poisoning attack on a real Split Learning system, we require knowledge of the other clients' private datasets. For the following example, consider that the attackers represent a portion of the '0' class and desire to poison the clients who are training the '1' class. The attacker could be doing this for any of the reasons we presented in the Motivation section.
 
 ##### 8-step process
 
