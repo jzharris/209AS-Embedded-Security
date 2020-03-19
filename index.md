@@ -69,23 +69,18 @@ Their second claim is that malicious client attacks are mitigated since a portio
 
 ### C. How it is done today
 
-No previous work has shown the vulnerabilities of Split Learning. We extend present state-of-the-art methods to attack Split Learning.
-
-<!-- 1. Simulate Split Learning
-2. Present the vulernabilities of Split Learning
-    - Label poisoning attacks [[3-5]](#3)
-    - Backdoor attacks [[6-7]](#6)
-3. Harden Split Learning
-    - Black-box trojan detection [[16]](#16)
-    - Mitigating federated learning poinsoning [[17]](#17) -->
+No previous work has shown the vulnerabilities of Split Learning. Gupta et al. [[9]](#9) mention their future work will be to investigate vulnerable aspects to Split Learning. We have performed this work in order to help in the investigation. Because no prior work has mounted an attack on Split Learning, we extend present state-of-the-art methods to perform an attack. First, we simulate the Split Learning pipeline from [[9]](#9). Second, we incorporate the GAN attack from [[3]](#3). Finally, we improve our new pipeline with black-box attacks such as FGSM [[21-23]](#21) and advGAN [[20]](#20). We decided to test the aspects of these two methods in particular by comparing the performance of different black-box attack attempts on the MNIST dataset in the MIT _MNIST Adversarial Examples Challenge_ [[18]](#18).
 
 ### D. Specific Aims
 
-1. Gather statistics for performing label poisoning and black-box attacks
-2. Simulate the Split Learning method
-3. Approximate Split Learning’s black-box model
-4. Evaluate vulnerability of Split Learning to a label poisoning attack
-5. Evaluate vulnerability of Split Learning to a data estimation attack
+In this work, we aim to perform the following five tasks:
+
+1. Gather statistics for performing label poisoning and black-box attacks 
+    - In order to ensure our attack will work once we 
+3. Simulate the Split Learning method
+4. Approximate Split Learning’s black-box model
+5. Evaluate vulnerability of Split Learning to a label poisoning attack
+6. Evaluate vulnerability of Split Learning to a data estimation attack
 
 
 <!-- ## Technical Approach -->
