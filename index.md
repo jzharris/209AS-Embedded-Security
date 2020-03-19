@@ -73,15 +73,27 @@ No previous work has shown the vulnerabilities of Split Learning. Gupta et al. [
 
 ### D. Specific Aims
 
-In this work, we aim to perform the following five tasks:
+In this work, we aim to accomplish the following five goals.
 
-1. Gather statistics for performing label poisoning and black-box attacks 
-    - In order to ensure our attack will work once we 
-3. Simulate the Split Learning method
-4. Approximate Split Learning’s black-box model
-5. Evaluate vulnerability of Split Learning to a label poisoning attack
-6. Evaluate vulnerability of Split Learning to a data estimation attack
+##### 1. Gather statistics for performing label poisoning attacks
 
+In order to perform label poisoning on Split Learning, we must develop a testbed where we can strengthen our label poisoning attacks.
+
+##### 2. Simulate the Split Learning method
+
+To perform label poisoning on Split Learning, we also must simulate the Split Learning method. In order to shorten training times and have complete control over every step in the Split Learning method, we train the black-box model on the same machine as the client's GAN model. We require for our simulation to provide the ability to vary the number of clients and attackers.
+
+##### 3. Approximate Split Learning’s black-box model
+
+The server-side black-box model must be approximated as quickly and accurately as possible. However, the initial Discriminator is initialized with random weights and is very far from the black-box model. We require a system that will maximize the Generator's output success rate on the Discriminator and a black-box attack system that will query the black-box with images that cause the Discriminator to quickly approach the black-box.
+
+##### 4. Evaluate vulnerability of Split Learning to a label poisoning attack
+
+In order to mount a label poisoning attack on a Split Learning system using a GAN, we must first determine how feasible it is to conduct label poisoning on Split Learning using compromised clients. Our aim is to show that Split Learning can be poisoned using label poisoning via backdoors we create in our simulation.
+
+##### 5. Evaluate vulnerability of Split Learning to a data estimation attack
+
+Finally, we must implement the black-box and data estimation scheme in a coordinated label poisoning attack. In order to evaluate the vulnerability of Split Learning to this method, we will present both aggregated and individual attack results.
 
 <!-- ## Technical Approach -->
 ## IV. Methods
@@ -90,11 +102,31 @@ In this work, we aim to perform the following five tasks:
 
 ### B. GAN Poisoning Attack
 
-In order to perform a label poisoning attack on a real Split Learning system, we require knowledge of the other clients' private datasets. For the following example, consider that the attackers represent a portion of the '0' class and desire to poison the clients who are training the '1' class. The attacker could be doing this for any of the reasons we presented in the Motivation section.
+In order to perform a label poisoning attack on a real Split Learning system, we require knowledge of the other clients' private datasets. For the following example, consider that an attacker represents 5% of the '0' class and desires to hinder the 100 clients responsible for training the '1' class.
+
+The attacker will train the GAN while pretending to be a normal client, contributing to the training of the black-box model by performing backpropagation on their '0' dataset and submitting the updated gradients to the server. The server accumulates clients on a timed schedule, resulting in 20 clients' gradient updates being accumulated every time using large batch synchronous SGD [[TODO]]().
+
+As the attacker trains equitably, their GAN will learn features from the other clients’ private datasets. Once the attacker is satisfied with the convergence of their GAN on the '1' class, they will use the images generated from the Generator of the GAN in a label poisoning attack to reduce the accuracy for that class.
+
+In order to accomplish this attack, we implement an 8-step training process. During this process both the Generator and Discriminator are optimized.
+
+<!-- Looking back: a potential mitigation is to have a strict schedule for accumulating batches between clients. ALTHOUGH, this could still be thwarted if the attacker had control of multiple clients. -->
 
 ##### 8-step process
 
 ![](report/8steps.gif)
+
+The above gif animates our 8-step process. This process is an extended version of the GAN poisoning attack performed by Zhang, Jiale, et al. [[3]](#3). We extend their method to account for querying the black-box model. The following steps are performed in order:
+
+1. Pretend to be a normal client, training on the ‘0’ class.
+2. Simultaneously train GAN to generate fake data.
+    - Repeat steps 1 and 2 until there is no further improvement that can be made to the Generator. In other words, until the Discriminator consistently marks the images from the Generator as indistinguishable from fake images.
+3. Use the optimized Generator to shuffle the fake data into the attacking client's normal training batch. This new batch of images is sent into the Split Learning model. The model returns the responses, and the labels from the fake data are removed and set aside.
+4. Perform a normal backpropagation step on the remaining labels. The query that the attacker made goes undetected because the server receives the same training pattern as a benign client.
+5. Generate a label from the Discriminator for each image generated by the Generator in step 3. The lables from the Discriminator are compared to the labels queried from the black-box. We use MSE to measure the difference between the labels. The Discriminator is refined to better match the black-box during future queries.
+6. Repeat steps 1 through 5 until data from the targetted class emerges.
+7. Send a batch of generated images into the Split Learning model.
+8. Perform backpropagation on the batch sent to the Split Learning model, however flip the labels accordingly to mount a label poisoning attack on the targetted class.
 
 ### C. GAN System Verification
 
@@ -104,6 +136,8 @@ In order to perform a label poisoning attack on a real Split Learning system, we
 ## V. Implementation
 
 ### A. Split Learning simulation
+
+<!-- TODO: mention Tensforflow v2's eager execution -->
 
 ### B. Attack setup
 
