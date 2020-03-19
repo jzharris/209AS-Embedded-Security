@@ -149,10 +149,17 @@ Therefore, optimizing the Discriminator refinement process is congruent to optim
 
 ### A. Split Learning simulation
 
-<!-- TODO: mention Tensforflow v2's eager execution -->
+We used Tensorflow v2 with Keras to implement our Split Learning simulation. We used Tensorflow's eager execution framework to dynamically train multiple models consecutively. We performed the simulation on a GTX 1080 GPU, with a machine that had 32 GB RAM. We trained on the MNIST digit dataset, which contains images of digits drawn in a 28x28 field. 1000 clients were split across the 10 types of digits, results with 100 clients per class. The server was hosted on the same machine and environment but in a separate model inaccessible to the client. The server accumulated clients at a rate so that 20 client gradients were accumulated before the Split Learning model was updated.
 
 ### B. Attack setup
 
+We used the same hardware setup and client distribution to perform our attack as the Split Learning simulation. When performing label poisoning, we assumed we had control of clients with images labeled 0, and we were trying to flip 1’s to 7’s The Discriminator shared the weights of the layers accessible to the client. The Discriminator received an identical layer layout as the black-box.
+
+##### Discriminator complexity analysis
+
+We decided to copy the structure of the black-box model for the Discriminator after an empirical analysis of the complexity requirements of the Discriminator. When running on the MNIST dataset, the black-box model be successfully approximated by a Disciminator with much less complexity. We found that, after plotting Discriminator accuracy vs black-box during the Discriminator refinement, the Discriminator solely depends on the accuracy of the black-box. We show these results in the following plots of the Discriminator's accuracy and loss when the Discriminator was refined on the black-box using the MNIST training set.
+
+![](report/complexity_analysis.PNG)
 
 ## VI. Experiments
 
