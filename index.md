@@ -195,9 +195,11 @@ We will use the accuracy of generated images on the black-box model to measure t
 
 ### B. GAN System Verification
 
+The following graph shows the Generator's accuracy for generating images that the black-box considers valid. The accuracy levels out early on, because the Generator finds a local minima. To ensure that we reach a global minima, if the accuracy from the GAN does not change after 10 epochs, the Discriminator is trained with 20% probability for the following epoch and then reset back to the original weights before the nudge. Because the Discriminator is trained on the Generator's images, it is able to move from the local minima it was in and into a lower local minima. If the Generator's accuracy does not change, even after a nudge, then we stop training the Generator. These are the stop conditions we used to determine when the Generator was trained adequately.
 
+![](report/exp2_graph.png)
 
-![](report/exp2_graph.PNG)
+The following image shows the output of the Generator for each digit counting up from 0 to 9. Although the digits are still not perfect (for example, the 9 still has some extra white on top), the results show that the Generator has the potential to provide valid images for all of the private classes used in training.
 
 ![](report/exp2_digits.PNG)
 
