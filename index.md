@@ -202,7 +202,7 @@ The following graph shows the Generator's accuracy for generating images that th
 The following image shows the output of the Generator for each digit counting up from 0 to 9. Although the digits are still not perfect (for example, the 9 still has some extra white on top), the results show that the Generator has the potential to provide valid images for all of the private classes used in training.
 
 <!--<img align="center" width="586" height="60" src="https://github.com/jzharris/209AS-Embedded-Security/tree/master/report/gan_verif_imgs.png">-->
-![](report/gan_verif_imgs.PNG)
+![](report/gan_verif_imgs.png)
 
 ### C. GAN Black-box Attack
 
