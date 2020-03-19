@@ -159,7 +159,8 @@ We used the same hardware setup and client distribution to perform our attack as
 
 We decided to copy the structure of the black-box model for the Discriminator after an empirical analysis of the complexity requirements of the Discriminator. When running on the MNIST dataset, the black-box model can be successfully approximated by a Disciminator with much less complexity. We found that, after plotting Discriminator accuracy vs black-box during the Discriminator refinement, the Discriminator solely depends on the accuracy of the black-box. We show these results in the following plots of the Discriminator's accuracy and loss when the Discriminator was refined on the black-box using the MNIST training set. These results show that by assuming that by deciding to copy the same structure of the black-box model, we are still over-estimating the Discriminator wrt to the black-box model.
 
-![](report/complexity_analysis_2.PNG)
+![](report/complexity_acc.png)
+![](report/complexity_loss.png)
 
 ## VI. Experiments
 
