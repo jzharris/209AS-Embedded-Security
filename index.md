@@ -1,12 +1,5 @@
 # Investigating the Vulnerabilities of Split Learning
 
-<!-- # Header 1
-## Header 2
-### Header 3
-#### Header 4
-##### Header 5
-###### Header 6 -->
-
 ### Authors
 * Zach Harris: UCLA, M.S. in ECE, _jzharris@g.ucla.edu_
 * Hamza Khan: UCLA, M.S. in ECE, _hamzakhan@g.ucla.edu_
@@ -166,11 +159,22 @@ Therefore, optimizing the Discriminator refinement process is congruent to optim
 
 ##### FGSM
 
-
+The Fast Gradient Sign Method is a technique for perturbing an input image by using the gradients of the neural network. The image is first evaluated by the network, _O_, and then the gradients are found using the Jacobian, _J_. We implement two forms of FGSM using the L1 norm and Infinity norm. The L1 norm normalizes the gradients, whereas the Infinity norm takes the sign of them. The equation below implements the Infinity norm. This result is then multiplied by a factored called lambda and added to the original input.
 
 ![](report/fgsm_eq.PNG)
 
+The thinking behind the FGSM is that the gradients indicate the neural network's decision boundary for the input image. By adding a portion of the gradients to the input image, the resulting approaches the decision boundary. Black-box attacks rely on querying the black-box with candidates that will help the attacker approximate the decision boundary of the black-box. We use FGSM for the same purpose: to speed up the refinement of the Discriminator.
+
 ##### advGAN
+
+Adversarial GAN seeks to provide the same utility as FGSM, but by using a Generator to perturb the images instead of an operation of the gradients. See the figure below for the training scheme of advGAN.
+
+![](report/advgan.png)
+
+Since FGSM is proven to be as performant as advGAN [[TODO]](), in this work we try a new generative adversarial approach that we call uGAN. uGAN adds a second generator network that we call u-Generator to our pipeline. This network is connected to the same Discrimator, but uses an additional loss term. This term, highlighted in blue in the following figure, encourages the generator to generate images that the Discriminator is most confident in, regardless of then label it gives. The certainty measurement is obtained by measuring the categorical crossentropy between the original output of the Discriminator and a one-hot encoded output. If the Discriminator is certain of it's labeling, then the one-hot encoded output will be very close to the original output. This leads to a decrease in the crossentropy. By overfitting the u-Generator, it generates candidates that we hope will provide good queries for the black-box.
+
+![](report/ugan1.png)
+![](report/ugan2.png)
 
 ## V. Implementation
 
@@ -261,6 +265,28 @@ The following image shows the output of the Generator for each digit counting up
 
 ### C. GAN Black-box Attack
 
+After verifying the GAN system is capable of producing valid attack candidates when the black-box is known, we now keep the black-box unknown and use black-box attack techniques to approximate the black-box.
+
+During the experiment, the GAN trained alongside the black-box attack. The success rate of the Generator was tracked by measuring how many of the generated images matched the label assigned by the black-box. The success rate of the Discriminator was tracked by measuring its accuracy on the MNIST test dataset. By comparing this accuracy to the accuracy of the black-box on the test set, we can measure how similar the Discriminator is to the black-box. Finally, we present the benefits of using black-box attack techniques by showing the generator output before and after the techniques were applied.
+
+##### Generator success rate
+
+The following figure shows a moving average of the Generator's accuracy on fooling the black-box for different black-box attack techniques. You can see that the only black-box attack technique that improved the Generator's success on fooling the black-box was FGSM when using the Infinity norm. A lambda of 0.5 was used for the FGSM methods. The FGMS using Infinity norm achieved 100% success after traing for 40 iterations. The black-box was trained every other iteration, simulating a realistic scenario where the attackers dont have long before the black-box changes its decision boundaries.
+
+TODO: figure
+
+##### Discriminator success rate
+
+The figure below shows the Discriminator's test accuracies for the different black-box attack techniques. The baseline, uGAN, and FGSM-L1 all diverge from the black-box test accuracy. It is evident why FGSM-Inf outperforms the others: it was able to preserve the Discriminator test accuracy during refinement. This best effort is still very far from the black-box test accuracy, shown in black. There is much room for improving this result and making the Discriminator better approach the black-box.
+
+TODO: figure
+
+##### Black-box attack success rate
+
+We show below the visual improvement made by FGSM when using the Infinity norm. You can see that although the patterns are similar, the Generator is more confident in its generation when using FGSM with the Infinity norm.
+
+TODO: figure
+
 ### D. Label Poisoning using GAN Images
 
 The results for label poisoning with the GAN images assuming equal number of training batches for normal and malicious clients are shown below:
@@ -304,6 +330,8 @@ One important direction of future work would be to investigate methods to preven
 One other direction to look into would be to extend our results to additional, more complex datasets like CIFAR100 or the AT&T datasets. This would give an idea of how well this technique would extend to more generic split learning setups rather than our proof-of-concept MNIST results.
 
 We can also apply our FGSM + GAN pipeline to a federated learning system to reduce the likelihood of a GAN-based attack being detected. Using FGSM significantly improved our results, so we expect it might do the same for Federated Learning (by which many of our attacks were inspired).
+
+TODO: use different lambdas in FGSM
 
 One final area of future work would be to explore replacing FGSM with elastic-net attack to deep neural networks (EAN) and see if that improves the results further.
 
