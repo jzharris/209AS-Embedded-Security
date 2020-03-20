@@ -285,7 +285,7 @@ The figure below shows the Discriminator's test accuracies for the different bla
 
 We show below the visual improvement made by FGSM when using the Infinity norm. First, observe the Generator's best output without FGSM. The digits are clouded with noise.
 
-![](report/exp3_g_basline.png)
+![](report/exp3_g_baseline.png)
 
 Compare this image to the Generator's best output when FGSM with Infinity norm is used. You can see that although the patterns are similar, the Generator is more confident in its generation when using FGSM with the Infinity norm.
 
