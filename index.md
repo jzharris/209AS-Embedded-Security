@@ -173,8 +173,7 @@ Adversarial GAN seeks to provide the same utility as FGSM, but by using a Genera
 
 Since FGSM is proven to be as performant as advGAN [[TODO]](), in this work we try a new generative adversarial approach that we call uGAN. uGAN adds a second generator network that we call u-Generator to our pipeline. This network is connected to the same Discrimator, but uses an additional loss term. This term, highlighted in blue in the following figure, encourages the generator to generate images that the Discriminator is most confident in, regardless of then label it gives. The certainty measurement is obtained by measuring the categorical crossentropy between the original output of the Discriminator and a one-hot encoded output. If the Discriminator is certain of it's labeling, then the one-hot encoded output will be very close to the original output. This leads to a decrease in the crossentropy. By overfitting the u-Generator, it generates candidates that we hope will provide good queries for the black-box.
 
-![](report/ugan1.png)
-![](report/ugan2.png)
+![](report/ugan_loss.png)
 
 ## V. Implementation
 
