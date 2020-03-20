@@ -200,6 +200,7 @@ We performed four experiments in turn. The completion the preceding experiment w
 First, we perform targeted label poisoning on a varying number of malicious input clients and observe the loss in accuracy with different amounts of poisoning. This shows the general vulnerability of the system to label poisoning, under the assumption that data from the input class we want to flip is known.
 
 ##### Success metrics
+
 We will use the accuracy of the classifier on the entire test set to determine how much the poisoning is affecting the system accuracy as a whole.
 
 Additionally, we look at the accuracy of the classifier on a modified dataset, in particular the original test set but with the labels flipped. This gives an idea of how much the label poisoning is successful (not just in reducing system accuracy, but in the *targeted* flipping of labels).
@@ -272,19 +273,23 @@ During the experiment, the GAN trained alongside the black-box attack. The succe
 
 The following figure shows a moving average of the Generator's accuracy on fooling the black-box for different black-box attack techniques. You can see that the only black-box attack technique that improved the Generator's success on fooling the black-box was FGSM when using the Infinity norm. A lambda of 0.5 was used for the FGSM methods. The FGMS using Infinity norm achieved 100% success after traing for 40 iterations. The black-box was trained every other iteration, simulating a realistic scenario where the attackers dont have long before the black-box changes its decision boundaries.
 
-TODO: figure
+![](report/exp3_gen_success.png)
 
 ##### Discriminator success rate
 
 The figure below shows the Discriminator's test accuracies for the different black-box attack techniques. The baseline, uGAN, and FGSM-L1 all diverge from the black-box test accuracy. It is evident why FGSM-Inf outperforms the others: it was able to preserve the Discriminator test accuracy during refinement. This best effort is still very far from the black-box test accuracy, shown in black. There is much room for improving this result and making the Discriminator better approach the black-box.
 
-TODO: figure
+![](report/exp3_disc_success.png)
 
 ##### Black-box attack success rate
 
-We show below the visual improvement made by FGSM when using the Infinity norm. You can see that although the patterns are similar, the Generator is more confident in its generation when using FGSM with the Infinity norm.
+We show below the visual improvement made by FGSM when using the Infinity norm. First, observe the Generator's best output without FGSM. The digits are clouded with noise.
 
-TODO: figure
+![](report/exp3_g_basline.png)
+
+Compare this image to the Generator's best output when FGSM with Infinity norm is used. You can see that although the patterns are similar, the Generator is more confident in its generation when using FGSM with the Infinity norm.
+
+![](report/exp3_g_inf.png)
 
 ### D. Label Poisoning using GAN Images
 
