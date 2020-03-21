@@ -27,7 +27,7 @@ Secondly, introduce Split Learning [[8-15]](#8) and investigate its susceptibili
 Distributed Machine Learning refers to techniques for implementing machine learning algorithms across multiple nodes/devices in order to increase accuracy, performance, and scalability to larger datasets. This leads to practical privacy concerns, 
 
 ##### Federated Learning
-The key idea for federated learning is that there is a single central model on the server that is fully known to every client. During training, each client downloads the model and updates the weights according to its data. These client updates are then aggregated by the server. In this way, there is no raw data sharing. However, there is high memory bandwidth and computational requirement and it has no privacy guarantees.
+The key idea for federated learning is that there is a single central model on the server that is fully known to every client. During training, each client downloads the model and updates the weights according to its data. These client updates are then aggregated by the server. In this way, there is no raw data sharing. However, there is high memory bandwidth and computational requirement and it has no privacy guarantees [[1]](#1).
 
 ##### Large Batch Synchronous SGD
 This technique adds multiple workers performing gradient updates simultaneously, and the fastest ones will be the ones updating the aggregate model. This is an improvement because, in an asynchronous SGD scenario, some local workers may be updating an older version of the model. Synchronous SGD is also faster and more accurate.
@@ -287,7 +287,7 @@ We show below the visual improvement made by FGSM when using the Infinity norm. 
 
 ![](report/exp3_g_baseline.png)
 
-Compare this image to the Generator's best output when FGSM with Infinity norm is used. You can see that although the patterns are similar, the Generator is more confident in its generation when using FGSM with the Infinity norm.
+Compare this image to the Generator's best output when FGSM with Infinity norm is used. You can see that although the patterns are similar, the Generator is more confident in its generation when using FGSM with the Infinity norm. Note that, in both cases, the Generator was able to fool the black-box with 100% accuracy. The reason why the Discriminator test accuracy is closer to the black-box model is because FGSM-Inf reduced the noise of the Generator's output. 
 
 ![](report/exp3_g_inf.png)
 
@@ -325,7 +325,23 @@ Finally, given that the blackbox model of the server can be estimated (which we 
 
 ## IX. Related Work
 
-<!-- TODO: add Black-box attack papers -->
+### A. Inference attacks
+
+With the growing reliance on neural network algorithms in many scientific and industrial fields, more and more researchers are sharing public neural network models.  However, in addition to the predictions the model producer aims to share, there is also a hidden large risk that the model consumer can infer other properties of the training data which the model producer did not intend to share. Works have shown that by making a neural network model public, an adversary can extract information that was unintended for release, such as the environment in which the data was produced, or the fraction of the data that comes from a certain class [[27]](#27). Other works have shown that you can determine whether a particular input sample was used during a model's training period [[28]](#28), which presents serious and potentially hazardous repercussions if the input sample can be traced back to a particular individual through means such as composition attacks [[29]](#29).
+
+### B. Federated learning
+
+As we mentioned before, in federated learning there is a single central model on the server that is fully known to every client. During training, each client downloads the model and updates the weights according to its data. These client updates are then aggregated by the server. In this way, there is no raw data sharing. However, there is high memory bandwidth and computational requirement and it has no privacy guarantees [[1]](#1). This training method appears secure and very resilient to attacks on the surface, since the clients do not have access to other clients' datasets. However, it has been shown to be vulnerable to attacks that extract information from the shared central model [[2-3]](#2).
+
+### C. Black-box attacks
+
+The problem of querying black-box neural network models has been performed by many previous works. In these works the goal of the attacker is to minimize the number of times the black-box is queried in order to reduce the chance the attacker is detected. This section summarizes recent work accomplished in this field.
+
+##### Projected Gradient Descent methods
+
+Projected gradient descent methods have been used in adversarial machine learning to make perturbations to images that are indistinguishable to the naked eye, however dramatically affect the targetted neural network's labeling of the perturbed image [[21]](#21). This technique operates by moving the input vector in a direction that approaches and preferrably crosses one or more of the neural network's internal decision boundaries.
+
+Since PGD functions seek out the decision boundary of a neural network, researchers have applied them in black-box attacks to better approximate the decision boundaries of the black-box they are querying. In this way, the Fast Gradient Sign Method has been used in multiple black-box attacks to strengthen their attack [[22-25]](#22).
 
 ## X. Future Work
 
@@ -335,9 +351,9 @@ One other direction to look into would be to extend our results to additional, m
 
 We can also apply our FGSM + GAN pipeline to a federated learning system to reduce the likelihood of a GAN-based attack being detected. Using FGSM significantly improved our results, so we expect it might do the same for Federated Learning (by which many of our attacks were inspired).
 
-TODO: use different lambdas in FGSM
+The scale factor, lambda, in our FGSM methods was set to 0.5 arbitrarily since we achieved decent results early on in our development at this value. However, this value could be optimized either through an exhaustivive search or by making it a  
 
-One final area of future work would be to explore replacing FGSM with elastic-net attack to deep neural networks (EAN) and see if that improves the results further.
+The **e**lastic-net **a**ttack to **d**eep neural networks (EAD) generates transferable adversarial examples which, have high Infinity-norm distortion, and yet have minimal visual distortion [[26]](#26). This new attack maximizes the Infinity-norm distortion, which may outperform FGSM in this case since FGSM-Inf had the best performance over all of the black-box methods we attempted. One final area of future work would be to explore replacing FGSM with elastic-net attack to deep neural networks (EAN) and see if that improves the results further.
 
 ## XI. Citations
 
@@ -440,5 +456,31 @@ One final area of future work would be to explore replacing FGSM with elastic-ne
     </li>
     <li id="23">
     Papernot, Nicolas, et al. "Practical black-box attacks against machine learning." Proceedings of the 2017 ACM on Asia conference on computer and communications security. 2017.
+    </li>
+    <li id="24">
+    Milton, Md Ashraful Alam. "Evaluation of Momentum Diverse Input Iterative Fast Gradient Sign Method (M-DI2-FGSM) Based Attack Method on MCS 2018 Adversarial Attacks on Black Box Face Recognition System." arXiv preprint arXiv:1806.08970 (2018).
+    </li>
+    <li id="25">
+    Tramèr, Florian, et al. "Ensemble adversarial training: Attacks and defenses." arXiv preprint arXiv:1705.07204 (2017).
+    </li>
+</ol>
+
+##### EAD method
+<ol start="26">
+    <li id="26">
+    Sharma, Yash, and Pin-Yu Chen. "Attacking the Madry Defense Model with $ L_1 $-based Adversarial Examples." arXiv preprint arXiv:1710.10733 (2017).
+    </li>
+</ol>
+
+##### Inferfence and privacy attacks
+<ol start="27">
+    <li id="27">
+    Ganju, Karan, et al. "Property inference attacks on fully connected neural networks using permutation invariant representations." Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications Security. 2018.
+    </li>
+    <li id="28">
+    Shokri, Reza, et al. "Membership inference attacks against machine learning models." 2017 IEEE Symposium on Security and Privacy (SP). IEEE, 2017.
+    </li>
+    <li id="29">
+    Ganta, Srivatsava Ranjit, Shiva Prasad Kasiviswanathan, and Adam Smith. "Composition attacks and auxiliary information in data privacy." Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining. 2008.
     </li>
 </ol>
