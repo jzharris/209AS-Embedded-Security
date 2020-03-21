@@ -37,15 +37,15 @@ This technique adds multiple workers performing gradient updates simultaneously,
 ##### Methods
 The basic premise for Split Learning is to split the ML model up into two pieces, assigning a certain number of the initial layers to a local client and the rest to the central server. The client's layers are publicly known, while the server's layer are kept private. The setup is shown below:
 
-[TODO] image goes here of vanilla split learning
+![](report/img1.PNG)
 
 For forward propagation, the client runs its data through its layers and passes the final output to the server. The server takes this output and runs it through its layers. For backward propagation, the server then calculates its gradients and sends it's first layer's gradients back to the client. The client finally updates its gradients and the training step is complete. These steps are shown in the following image:
 
-[TODO] image goes here of forward and backward prop
+![](report/img2.PNG)
 
 One improvement of split learning in terms of privacy is a variation that has no label sharing. This is useful because if the server has knowledge of the labels, then it can gain information about the various clients. The setup required is shown below:
 
-[TODO] image goes here, split learning without label sharing
+![](report/img3.PNG)
 
 Essentially, just as the first few layers were on the client side, now the final layers are also on the client. This way, the setup looks U-shaped, with the client passing to the server and then back to the client for both forward and backward passes. This keeps the output labels private to the client, and it is the variation we will be discussing throughout this paper.
 
@@ -77,7 +77,7 @@ We are investigating the data privacy and model poisoning vulnerabilities for sy
 
 Split Learning has made specific claims [[9]](#9) that gives the training pipeline an extra edge in security over other collaborative training methods such as Federated Learning.
 
-Their first claim is that the training data of disjoint clients cannot be accessed by one another, and a client's dataset is garaunteed to be secure regardless of the number of malicious clients present. This claim stems from the fact that the client's dataset never leaves their local system: the only information shared by the client's machine are the activations of the last client-side layer. The client-side layers introduce noise and perform nonlinear operations on the original input data. The information sent to the server is therefore not the client's raw data, but can be thought of as a cipher calculated by the client's private layers. [[TODO]]() The cipher is weak because these client-side layers are shared amongst clients, which means that a maliscious client can recover the private data if they intercepted the victim client's transmission. However, since we are dealing with client-server communication, the transmission can be encrypted using public key encryption [[TODO]](). However, an attacker outside of the Split Learning process would not be able to derive the client's dataset regardless of extra encyption. Split Learning therefore easily mitigates snooping attacks and keeps all of the client's data private.
+Their first claim is that the training data of disjoint clients cannot be accessed by one another, and a client's dataset is garaunteed to be secure regardless of the number of malicious clients present. This claim stems from the fact that the client's dataset never leaves their local system: the only information shared by the client's machine are the activations of the last client-side layer. The client-side layers introduce noise and perform nonlinear operations on the original input data. The information sent to the server is therefore not the client's raw data, but can be thought of as a cipher calculated by the client's private layers [[8]](#8). The cipher is weak because these client-side layers are shared amongst clients, which means that a maliscious client can recover the private data if they intercepted the victim client's transmission. However, since we are dealing with client-server communication, the transmission can be encrypted using public key encryption [[30]](#30). However, an attacker outside of the Split Learning process would not be able to derive the client's dataset regardless of extra encyption. Split Learning therefore easily mitigates snooping attacks and keeps all of the client's data private.
 
 Their second claim is that malicious client attacks are mitigated since a portion of the shared model is off-limits to all clients. Zhang, Jiale, et al. [[3]](#3) showed that the private datasets of clients can be approximated when all clients have access to the model while it is training. Their work involved using a GAN to implement a label poisoning attack where the GAN's Discriminator model was replaced with the public model. By doing so, the GAN's generator was able to generate a convincing approximation of all classes that the attacker did not have access to. In order to mitigate this vulnerability, Split Learning keeps a portion of the model off-limits to the clients. This way, it is incredibly difficult to mount an attack using a GAN like before, because most of the model is now unkown to the attacker.
 
@@ -124,7 +124,7 @@ One issue with a targeted label poisoning attack is that we assume that we have 
 
 In order to perform a label poisoning attack on a real Split Learning system, we require knowledge of the other clients' private datasets. For the following example, consider that an attacker represents 5% of the '0' class and desires to hinder the 100 clients responsible for training the '1' class.
 
-The attacker will train the GAN while pretending to be a normal client, contributing to the training of the black-box model by performing backpropagation on their '0' dataset and submitting the updated gradients to the server. The server accumulates clients on a timed schedule, resulting in 20 clients' gradient updates being accumulated every time using large batch synchronous SGD [[TODO]]().
+The attacker will train the GAN while pretending to be a normal client, contributing to the training of the black-box model by performing backpropagation on their '0' dataset and submitting the updated gradients to the server. The server accumulates clients on a timed schedule, resulting in 20 clients' gradient updates being accumulated every time using large batch synchronous SGD [[10]](#10).
 
 As the attacker trains equitably, their GAN will learn features from the other clients’ private datasets. Once the attacker is satisfied with the convergence of their GAN on the '1' class, they will use the images generated from the Generator of the GAN in a label poisoning attack to reduce the accuracy for that class.
 
@@ -159,7 +159,7 @@ Therefore, optimizing the Discriminator refinement process is congruent to optim
 
 ##### FGSM
 
-The Fast Gradient Sign Method is a technique for perturbing an input image by using the gradients of the neural network. The image is first evaluated by the network, _O_, and then the gradients are found using the Jacobian, _J_. We implement two forms of FGSM using the L1 norm and Infinity norm. The L1 norm normalizes the gradients, whereas the Infinity norm takes the sign of them. The equation below implements the Infinity norm. This result is then multiplied by a factored called $\lambda$ and added to the original input.
+The Fast Gradient Sign Method is a technique for perturbing an input image by using the gradients of the neural network. The image is first evaluated by the network, _O_, and then the gradients are found using the Jacobian, _J_. We implement two forms of FGSM using the L1 norm and Infinity norm. The L1 norm normalizes the gradients, whereas the Infinity norm takes the sign of them. The equation below implements the Infinity norm. This result is then multiplied by a factored called lambda and added to the original input.
 
 ![](report/fgsm_eq.PNG)
 
@@ -171,7 +171,7 @@ Adversarial GAN seeks to provide the same utility as FGSM, but by using a Genera
 
 ![](report/advgan.png)
 
-Since FGSM is proven to be as performant as advGAN [[TODO]](), in this work we try a new generative adversarial approach that we call uGAN. uGAN adds a second generator network that we call u-Generator to our pipeline. This network is connected to the same Discrimator, but uses an additional loss term. This term, highlighted in blue in the following figure, encourages the generator to generate images that the Discriminator is most confident in, regardless of then label it gives. The certainty measurement is obtained by measuring the categorical crossentropy between the original output of the Discriminator and a one-hot encoded output. If the Discriminator is certain of it's labeling, then the one-hot encoded output will be very close to the original output. This leads to a decrease in the crossentropy. By overfitting the u-Generator, it generates candidates that we hope will provide good queries for the black-box.
+Since FGSM is proven to be as performant as advGAN [[31]](#31), in this work we try a new generative adversarial approach that we call uGAN. uGAN adds a second generator network that we call u-Generator to our pipeline. This network is connected to the same Discrimator, but uses an additional loss term. This term, highlighted in blue in the following figure, encourages the generator to generate images that the Discriminator is most confident in, regardless of then label it gives. The certainty measurement is obtained by measuring the categorical crossentropy between the original output of the Discriminator and a one-hot encoded output. If the Discriminator is certain of it's labeling, then the one-hot encoded output will be very close to the original output. This leads to a decrease in the crossentropy. By overfitting the u-Generator, it generates candidates that we hope will provide good queries for the black-box.
 
 ![](report/ugan_loss.png)
 
@@ -241,7 +241,7 @@ Our success metric is determined by the accuracy of the system on two labels (ou
 
 The following table shows the results of the label poisoning attack:
 
-[TODO] insert label poisoning results here
+![](report/img4.PNG)
 
 The "Percent Poisoned" columns indicate the percent of clients for each data class that are poisoning the system by label flipping. The test accuracy and the poisoned test accuracy indicate the two metrics mentioned in the previous section. Our baseline accuracy is 98.56% with no malicious clients.
 
@@ -271,7 +271,7 @@ During the experiment, the GAN trained alongside the black-box attack. The succe
 
 ##### Generator success rate
 
-The following figure shows a moving average of the Generator's accuracy on fooling the black-box for different black-box attack techniques. You can see that the only black-box attack technique that improved the Generator's success on fooling the black-box was FGSM when using the Infinity norm. A $\lambda$ of 0.5 was used for the FGSM methods. The FGMS using Infinity norm achieved 100% success after traing for 40 iterations. The black-box was trained every other iteration, simulating a realistic scenario where the attackers dont have long before the black-box changes its decision boundaries.
+The following figure shows a moving average of the Generator's accuracy on fooling the black-box for different black-box attack techniques. You can see that the only black-box attack technique that improved the Generator's success on fooling the black-box was FGSM when using the Infinity norm. A lambda of 0.5 was used for the FGSM methods. The FGMS using Infinity norm achieved 100% success after traing for 40 iterations. The black-box was trained every other iteration, simulating a realistic scenario where the attackers dont have long before the black-box changes its decision boundaries.
 
 ![](report/exp3_gen_success.png)
 
@@ -295,7 +295,7 @@ Compare this image to the Generator's best output when FGSM with Infinity norm i
 
 The results for label poisoning with the GAN images assuming equal number of training batches for normal and malicious clients are shown below:
 
-[TODO] experiment 4 results # 1
+![](report/img5.PNG)
 
 This table shows the effect on 1 and 7 classification accuracy with varying clients simultaneously training during the attack. We see that in the ideal scenario, where only the malicious client is training, the 1's and 7's are nearly perfectly misclassified.
 
@@ -305,11 +305,11 @@ However, when we remove just the 1's and 7's from training, we are immediately a
 
 To make label poisoning more feasible in a realistic scenario, we kept the 1's and 7's also training along with all other clients. However, we looked at the effect of increasing the number of attack batches compared to normal batches. For general label flipping (not specifically 1's and 7s', but all pairs of flipped labels), we got the results shown in the graph below:
 
-[TODO] experiment 4 results # 2 graph 
+![](report/img6.PNG)
 
 These results show that by around 40x the number of attack batches than regular batches, we are able to get about a 60% label flipping success rate. If we specifically look at just flipping 1's into 7's, we get the results below:
 
-[TODO] experiment 4 results # 2 graph 2
+![](report/img7.PNG)
 
 In this case, by around 50x the number of attack batches than regular batches, we are able to get perfect label flipping accuracy (assigning all 1's to 7's). This shows that by flooding the system with training steps using the GAN-generated images, we are able to successfully poison the labels doing a targeted label flipping attack.
 
@@ -351,7 +351,7 @@ One other direction to look into would be to extend our results to additional, m
 
 We can also apply our FGSM + GAN pipeline to a federated learning system to reduce the likelihood of a GAN-based attack being detected. Using FGSM significantly improved our results, so we expect it might do the same for Federated Learning (by which many of our attacks were inspired).
 
-The scale factor, $\lambda$, in our FGSM methods was set to 0.5 arbitrarily since we achieved decent results early on in our development at this value. However, this value could be optimized either through an exhaustivive search or by making it a trainable variable in the Generator model.
+The scale factor, lambda, in our FGSM methods was set to 0.5 arbitrarily since we achieved decent results early on in our development at this value. However, this value could be optimized either through an exhaustivive search or by making it a trainable variable in the Generator model.
 
 The **e**lastic-net **a**ttack to **d**eep neural networks (EAD) generates transferable adversarial examples which, have high Infinity-norm distortion, and yet have minimal visual distortion [[26]](#26). This new attack maximizes the Infinity-norm distortion, which may outperform FGSM in this case since FGSM-Inf had the best performance over all of the black-box methods we attempted. One final area of future work would be to explore replacing FGSM with elastic-net attack to deep neural networks (EAN) and see if that improves the results further.
 
@@ -482,5 +482,15 @@ The **e**lastic-net **a**ttack to **d**eep neural networks (EAD) generates trans
     </li>
     <li id="29">
     Ganta, Srivatsava Ranjit, Shiva Prasad Kasiviswanathan, and Adam Smith. "Composition attacks and auxiliary information in data privacy." Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining. 2008.
+    </li>
+</ol>
+
+##### Public key encryption
+<ol start="30">
+    <li id="30">
+    Canetti, Ran, Shai Halevi, and Jonathan Katz. "A forward-secure public-key encryption scheme." International Conference on the Theory and Applications of Cryptographic Techniques. Springer, Berlin, Heidelberg, 2003.
+    </li>
+    <li id="31">
+    Li, Chaoran, et al. "Man-in-the-Middle Attacks against Machine Learning Classifiers via Malicious Generative Models." arXiv preprint arXiv:1910.06838 (2019).
     </li>
 </ol>
