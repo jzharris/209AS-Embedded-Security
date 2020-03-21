@@ -159,7 +159,7 @@ Therefore, optimizing the Discriminator refinement process is congruent to optim
 
 ##### FGSM
 
-The Fast Gradient Sign Method is a technique for perturbing an input image by using the gradients of the neural network. The image is first evaluated by the network, _O_, and then the gradients are found using the Jacobian, _J_. We implement two forms of FGSM using the L1 norm and Infinity norm. The L1 norm normalizes the gradients, whereas the Infinity norm takes the sign of them. The equation below implements the Infinity norm. This result is then multiplied by a factored called lambda and added to the original input.
+The Fast Gradient Sign Method is a technique for perturbing an input image by using the gradients of the neural network. The image is first evaluated by the network, _O_, and then the gradients are found using the Jacobian, _J_. We implement two forms of FGSM using the L1 norm and Infinity norm. The L1 norm normalizes the gradients, whereas the Infinity norm takes the sign of them. The equation below implements the Infinity norm. This result is then multiplied by a factored called $\$lambda and added to the original input.
 
 ![](report/fgsm_eq.PNG)
 
@@ -271,7 +271,7 @@ During the experiment, the GAN trained alongside the black-box attack. The succe
 
 ##### Generator success rate
 
-The following figure shows a moving average of the Generator's accuracy on fooling the black-box for different black-box attack techniques. You can see that the only black-box attack technique that improved the Generator's success on fooling the black-box was FGSM when using the Infinity norm. A lambda of 0.5 was used for the FGSM methods. The FGMS using Infinity norm achieved 100% success after traing for 40 iterations. The black-box was trained every other iteration, simulating a realistic scenario where the attackers dont have long before the black-box changes its decision boundaries.
+The following figure shows a moving average of the Generator's accuracy on fooling the black-box for different black-box attack techniques. You can see that the only black-box attack technique that improved the Generator's success on fooling the black-box was FGSM when using the Infinity norm. A $\lambda$ of 0.5 was used for the FGSM methods. The FGMS using Infinity norm achieved 100% success after traing for 40 iterations. The black-box was trained every other iteration, simulating a realistic scenario where the attackers dont have long before the black-box changes its decision boundaries.
 
 ![](report/exp3_gen_success.png)
 
@@ -351,7 +351,7 @@ One other direction to look into would be to extend our results to additional, m
 
 We can also apply our FGSM + GAN pipeline to a federated learning system to reduce the likelihood of a GAN-based attack being detected. Using FGSM significantly improved our results, so we expect it might do the same for Federated Learning (by which many of our attacks were inspired).
 
-The scale factor, lambda, in our FGSM methods was set to 0.5 arbitrarily since we achieved decent results early on in our development at this value. However, this value could be optimized either through an exhaustivive search or by making it a  
+The scale factor, $\lambda$, in our FGSM methods was set to 0.5 arbitrarily since we achieved decent results early on in our development at this value. However, this value could be optimized either through an exhaustivive search or by making it a trainable variable in the Generator model.
 
 The **e**lastic-net **a**ttack to **d**eep neural networks (EAD) generates transferable adversarial examples which, have high Infinity-norm distortion, and yet have minimal visual distortion [[26]](#26). This new attack maximizes the Infinity-norm distortion, which may outperform FGSM in this case since FGSM-Inf had the best performance over all of the black-box methods we attempted. One final area of future work would be to explore replacing FGSM with elastic-net attack to deep neural networks (EAN) and see if that improves the results further.
 
