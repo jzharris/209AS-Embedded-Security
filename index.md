@@ -159,7 +159,7 @@ Therefore, optimizing the Discriminator refinement process is congruent to optim
 
 ##### FGSM
 
-The Fast Gradient Sign Method is a technique for perturbing an input image by using the gradients of the neural network. The image is first evaluated by the network, _O_, and then the gradients are found using the Jacobian, _J_. We implement two forms of FGSM using the L1 norm and Infinity norm. The L1 norm normalizes the gradients, whereas the Infinity norm takes the sign of them. The equation below implements the Infinity norm. This result is then multiplied by a factored called $\$lambda and added to the original input.
+The Fast Gradient Sign Method is a technique for perturbing an input image by using the gradients of the neural network. The image is first evaluated by the network, _O_, and then the gradients are found using the Jacobian, _J_. We implement two forms of FGSM using the L1 norm and Infinity norm. The L1 norm normalizes the gradients, whereas the Infinity norm takes the sign of them. The equation below implements the Infinity norm. This result is then multiplied by a factored called $\lambda$ and added to the original input.
 
 ![](report/fgsm_eq.PNG)
 
